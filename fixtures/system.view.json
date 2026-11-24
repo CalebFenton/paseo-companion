@@ -1,0 +1,495 @@
+{
+  "closed": [
+    {
+      "at": 1791993540000,
+      "values": {
+        "cpu": [90.3,90.3],
+        "memory": [27.4,27.4],
+        "load": [112.3,112.3],
+        "cpu-pressure": [41.2,41.2],
+        "memory-pressure": [2.6,2.6],
+        "io-pressure": [4.2,4.2],
+        "disk": [120221696,120221696],
+        "network": [4276054,4276054]
+      }
+    }
+  ],
+  "views": [
+    {
+      "host": "devbox",
+      "sampledAt": 1791993600000,
+      "headline": [
+        {
+          "text": "cpu █ 92%",
+          "tone": "warning"
+        },
+        {
+          "text": "mem 27%",
+          "tone": "ok"
+        }
+      ],
+      "charts": [
+        {
+          "id": "cpu",
+          "title": "CPU",
+          "value": "93%",
+          "detail": "user 68% · system 25% · iowait 0.2%",
+          "tone": "warning",
+          "scale": "100%",
+          "average": [null,null,null,null,null,null,null,null,null,0.43,null,null,null,null,null,null,null,null,null,0.417,null,null,null,null,null,null,null,null,null,0.404,null,null,null,null,null,null,null,null,null,0.39,null,null,null,null,null,null,null,null,null,0.377,null,null,null,null,null,null,null,null,null,0.916],
+          "peak": [null,null,null,null,null,null,null,null,null,0.58,null,null,null,null,null,null,null,null,null,0.567,null,null,null,null,null,null,null,null,null,0.554,null,null,null,null,null,null,null,null,null,0.54,null,null,null,null,null,null,null,null,null,0.527,null,null,null,null,null,null,null,null,null,0.928],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning"]
+        },
+        {
+          "id": "memory",
+          "title": "Memory",
+          "value": "27%",
+          "detail": "127 GiB of 464 GiB · no swap",
+          "tone": "ok",
+          "scale": "100%",
+          "average": [null,null,null,null,null,null,null,null,null,0.326,null,null,null,null,null,null,null,null,null,0.323,null,null,null,null,null,null,null,null,null,0.321,null,null,null,null,null,null,null,null,null,0.318,null,null,null,null,null,null,null,null,null,0.315,null,null,null,null,null,null,null,null,null,0.274],
+          "peak": [null,null,null,null,null,null,null,null,null,0.336,null,null,null,null,null,null,null,null,null,0.333,null,null,null,null,null,null,null,null,null,0.331,null,null,null,null,null,null,null,null,null,0.328,null,null,null,null,null,null,null,null,null,0.325,null,null,null,null,null,null,null,null,null,0.274],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "load",
+          "title": "Load",
+          "value": "112",
+          "detail": "5m 135 · 15m 177 · 60 cores · 99 running · 1 blocked",
+          "tone": "ok",
+          "scale": "189",
+          "average": [null,null,null,null,null,null,null,null,null,0.841,null,null,null,null,null,null,null,null,null,0.821,null,null,null,null,null,null,null,null,null,0.8,null,null,null,null,null,null,null,null,null,0.778,null,null,null,null,null,null,null,null,null,0.757,null,null,null,null,null,null,null,null,null,0.594],
+          "peak": [null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,0.979,null,null,null,null,null,null,null,null,null,0.958,null,null,null,null,null,null,null,null,null,0.937,null,null,null,null,null,null,null,null,null,0.915,null,null,null,null,null,null,null,null,null,0.594],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "cpu-pressure",
+          "title": "CPU wait",
+          "value": "45%",
+          "detail": "programs waiting for a free CPU",
+          "tone": "danger",
+          "scale": "100%",
+          "average": [null,null,null,null,null,null,null,null,null,0.165,null,null,null,null,null,null,null,null,null,0.159,null,null,null,null,null,null,null,null,null,0.152,null,null,null,null,null,null,null,null,null,0.145,null,null,null,null,null,null,null,null,null,0.139,null,null,null,null,null,null,null,null,null,0.432],
+          "peak": [null,null,null,null,null,null,null,null,null,0.315,null,null,null,null,null,null,null,null,null,0.309,null,null,null,null,null,null,null,null,null,0.302,null,null,null,null,null,null,null,null,null,0.295,null,null,null,null,null,null,null,null,null,0.289,null,null,null,null,null,null,null,null,null,0.452],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","danger"]
+        },
+        {
+          "id": "memory-pressure",
+          "title": "Memory wait",
+          "value": "0.2%",
+          "detail": "programs waiting for memory · fully stalled 0.1%",
+          "tone": "ok",
+          "scale": "100%",
+          "average": [null,null,null,null,null,null,null,null,null,0.005,null,null,null,null,null,null,null,null,null,0.005,null,null,null,null,null,null,null,null,null,0.005,null,null,null,null,null,null,null,null,null,0.005,null,null,null,null,null,null,null,null,null,0.005,null,null,null,null,null,null,null,null,null,0.014],
+          "peak": [null,null,null,null,null,null,null,null,null,0.01,null,null,null,null,null,null,null,null,null,0.01,null,null,null,null,null,null,null,null,null,0.01,null,null,null,null,null,null,null,null,null,0.01,null,null,null,null,null,null,null,null,null,0.01,null,null,null,null,null,null,null,null,null,0.026],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "io-pressure",
+          "title": "Disk wait",
+          "value": "3.0%",
+          "detail": "programs waiting for storage · fully stalled 0.3%",
+          "tone": "ok",
+          "scale": "100%",
+          "average": [null,null,null,null,null,null,null,null,null,0.086,null,null,null,null,null,null,null,null,null,0.083,null,null,null,null,null,null,null,null,null,0.081,null,null,null,null,null,null,null,null,null,0.078,null,null,null,null,null,null,null,null,null,0.075,null,null,null,null,null,null,null,null,null,0.036],
+          "peak": [null,null,null,null,null,null,null,null,null,0.146,null,null,null,null,null,null,null,null,null,0.143,null,null,null,null,null,null,null,null,null,0.141,null,null,null,null,null,null,null,null,null,0.138,null,null,null,null,null,null,null,null,null,0.135,null,null,null,null,null,null,null,null,null,0.042],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "disk",
+          "title": "Disk",
+          "value": "73 MiB/s",
+          "detail": "read 0 B/s · write 73 MiB/s",
+          "tone": "ok",
+          "scale": "115 MiB/s",
+          "average": [null,null,null,null,null,null,null,null,null,0.358,null,null,null,null,null,null,null,null,null,0.347,null,null,null,null,null,null,null,null,null,0.336,null,null,null,null,null,null,null,null,null,0.325,null,null,null,null,null,null,null,null,null,0.314,null,null,null,null,null,null,null,null,null,0.818],
+          "peak": [null,null,null,null,null,null,null,null,null,0.998,null,null,null,null,null,null,null,null,null,0.998,null,null,null,null,null,null,null,null,null,0.998,null,null,null,null,null,null,null,null,null,0.998,null,null,null,null,null,null,null,null,null,0.998,null,null,null,null,null,null,null,null,null,1],
+          "tones": null
+        },
+        {
+          "id": "network",
+          "title": "Network",
+          "value": "204 KiB/s",
+          "detail": "in 164 KiB/s · out 41 KiB/s",
+          "tone": "ok",
+          "scale": "7.6 MiB/s",
+          "average": [null,null,null,null,null,null,null,null,null,0.25,null,null,null,null,null,null,null,null,null,0.25,null,null,null,null,null,null,null,null,null,0.25,null,null,null,null,null,null,null,null,null,0.25,null,null,null,null,null,null,null,null,null,0.25,null,null,null,null,null,null,null,null,null,0.28],
+          "peak": [null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,0.535],
+          "tones": null
+        }
+      ],
+      "cores": {
+        "title": "60 cores",
+        "detail": "busiest 100% · 55 at 80% or more",
+        "average": [0.985,0.795,0.964,0.921,0.965,0.889,0.884,0.99,0.893,0.91,0.915,1,0.83,0.995,0.966,0.98,0.884,0.941,0.945,0.789,0.985,0.941,0.96,0.941,0.956,0.867,0.951,0.749,0.895,0.985,0.989,0.925,0.995,0.915,0.743,0.98,1,0.891,0.975,0.941,0.956,0.93,0.849,0.98,0.91,0.9,0.955,0.924,1,0.985,0.955,0.995,0.654,1,1,0.875,0.895,0.941,0.925,0.971],
+        "peak": [0.985,0.795,0.964,0.921,0.965,0.889,0.884,0.99,0.893,0.91,0.915,1,0.83,0.995,0.966,0.98,0.884,0.941,0.945,0.789,0.985,0.941,0.96,0.941,0.956,0.867,0.951,0.749,0.895,0.985,0.989,0.925,0.995,0.915,0.743,0.98,1,0.891,0.975,0.941,0.956,0.93,0.849,0.98,0.91,0.9,0.955,0.924,1,0.985,0.955,0.995,0.654,1,1,0.875,0.895,0.941,0.925,0.971],
+        "tones": ["danger","ok","danger","warning","danger","warning","warning","danger","warning","warning","warning","danger","warning","danger","danger","danger","warning","warning","warning","ok","danger","warning","danger","warning","danger","warning","danger","ok","warning","danger","danger","warning","danger","warning","ok","danger","danger","warning","danger","warning","danger","warning","warning","danger","warning","warning","danger","warning","danger","danger","danger","danger","ok","danger","danger","warning","warning","warning","warning","danger"]
+      },
+      "filesystems": [
+        {
+          "path": "/",
+          "value": "85%",
+          "fraction": 0.853,
+          "detail": "34 GiB free of 244 GiB · ext4",
+          "tone": "warning"
+        },
+        {
+          "path": "/boot",
+          "value": "20%",
+          "fraction": 0.198,
+          "detail": "727 MiB free of 973 MiB · ext4",
+          "tone": "ok"
+        },
+        {
+          "path": "/boot/efi",
+          "value": "1.2%",
+          "fraction": 0.012,
+          "detail": "505 MiB free of 511 MiB · vfat",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/code",
+          "value": "51%",
+          "fraction": 0.51,
+          "detail": "8.8 TiB free of 18 TiB · nfs4",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/data",
+          "value": "49%",
+          "fraction": 0.49,
+          "detail": "8.8 TiB free of 17 TiB · nfs4 · last read 5m ago",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/fast",
+          "value": "80%",
+          "fraction": 0.802,
+          "detail": "667 GiB free of 3.5 TiB · ext4",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/nas",
+          "value": "51%",
+          "fraction": 0.51,
+          "detail": "8.8 TiB free of 18 TiB · cifs",
+          "tone": "ok"
+        }
+      ],
+      "processes": {
+        "detail": "CPU as % of one core, over the last 10 s",
+        "rows": [
+          {
+            "pid": 4048759,
+            "cpu": "514%",
+            "memory": "689 MiB",
+            "command": "rustc @bazel-out/k8-fastbuild/bin/crates/conformance/conformance-req_exec-capi-test_bin-0.params.expanded",
+            "detail": "pid 4048759"
+          },
+          {
+            "pid": 3830964,
+            "cpu": "103%",
+            "memory": "1.2 GiB",
+            "command": "fuzz-harness-test --nocapture --exact finds_its_floor",
+            "detail": "pid 3830964"
+          },
+          {
+            "pid": 3830999,
+            "cpu": "41%",
+            "memory": "1.5 GiB",
+            "command": "k3s server",
+            "detail": "pid 3830999"
+          },
+          {
+            "pid": 3444096,
+            "cpu": "21%",
+            "memory": "",
+            "command": "[kworker/u240:30-rpciod]",
+            "detail": "pid 3444096"
+          },
+          {
+            "pid": 3077239,
+            "cpu": "11%",
+            "memory": "743 MiB",
+            "command": "Paseo Daemon",
+            "detail": "pid 3077239"
+          },
+          {
+            "pid": 4060448,
+            "cpu": "7.6%",
+            "memory": "188 KiB",
+            "command": "[exe]",
+            "detail": "pid 4060448"
+          },
+          {
+            "pid": 3478347,
+            "cpu": "6.2%",
+            "memory": "506 MiB",
+            "command": "omp --mode rpc-ui --approval-mode yolo --thinking high --session 2026-10-04T21-22-04-920Z_01a108cb-9ff9-73a5-8379-268afef4e8f7.jsonl",
+            "detail": "pid 3478347 · in workspace paseo-companion"
+          },
+          {
+            "pid": 147514,
+            "cpu": "5.9%",
+            "memory": "653 MiB",
+            "command": "omp --mode rpc-ui --approval-mode yolo --thinking high --session 2026-10-31T21-44-39-613Z_01a193eb-ffbd-71ff-846c-81012dd32e9c.jsonl",
+            "detail": "pid 147514 · in workspace Research notes"
+          },
+          {
+            "pid": 361465,
+            "cpu": "5.2%",
+            "memory": "482 MiB",
+            "command": "omp --mode rpc-ui --approval-mode yolo --thinking high --session 2026-11-03T11-34-15-071Z_01a1a130-3b1f-7272-98ee-d282fa5938a1.jsonl",
+            "detail": "pid 361465 · in workspace wiggly-gecko"
+          },
+          {
+            "pid": 3541375,
+            "cpu": "3.5%",
+            "memory": "325 MiB",
+            "command": "chrome --type=renderer --gpu-client-id=11 --crashpad-handler-pid=3529959 --enable-crash-reporter=, --noerrdialogs --user-data-dir=/home/dev/.omp/profiles/personal/run/daemons/2e4fbbfd1ad3ea78/omp.brow",
+            "detail": "pid 3541375 · in workspace paseo-companion"
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "host": "devbox",
+      "sampledAt": 1791993600000,
+      "headline": [
+        {
+          "text": "cpu █ 92%",
+          "tone": "warning"
+        },
+        {
+          "text": "mem 27%",
+          "tone": "ok"
+        }
+      ],
+      "charts": [
+        {
+          "id": "cpu",
+          "title": "CPU",
+          "value": "93%",
+          "detail": "user 68% · system 25% · iowait 0.2%",
+          "tone": "warning",
+          "scale": "100%",
+          "average": [0.42,0.433,0.445,0.457,0.467,0.477,0.485,0.491,0.496,0.499,0.5,0.499,0.497,0.493,0.487,0.479,0.471,0.46,0.449,0.437,0.424,0.411,0.397,0.384,0.371,0.358,0.346,0.335,0.326,0.317,0.31,0.305,null,null,null,null,null,null,null,null,0.337,0.348,0.36,0.373,0.386,0.399,0.413,0.426,0.439,0.451,0.462,0.472,0.481,0.488,0.494,0.497,0.5,0.5,0.498,0.495,0.49,0.483,0.475,0.466,0.455,0.443,0.43,0.417,0.404,0.39,0.377,0.916],
+          "peak": [0.57,0.583,0.595,0.607,0.617,0.627,0.635,0.641,0.646,0.649,0.65,0.649,0.647,0.643,0.637,0.629,0.621,0.61,0.599,0.587,0.574,0.561,0.547,0.534,0.521,0.508,0.496,0.485,0.476,0.467,0.46,0.455,null,null,null,null,null,null,null,null,0.487,0.498,0.51,0.523,0.536,0.549,0.563,1,0.589,0.601,0.612,0.622,0.631,0.638,0.644,0.647,0.65,0.65,0.648,0.645,0.64,0.633,0.625,0.616,0.605,0.593,0.58,0.567,0.554,0.54,0.527,0.928],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning"]
+        },
+        {
+          "id": "memory",
+          "title": "Memory",
+          "value": "27%",
+          "detail": "127 GiB of 464 GiB · no swap",
+          "tone": "ok",
+          "scale": "100%",
+          "average": [0.324,0.327,0.329,0.331,0.333,0.335,0.337,0.338,0.339,0.34,0.34,0.34,0.339,0.339,0.337,0.336,0.334,0.332,0.33,0.327,0.325,0.322,0.319,0.317,0.314,0.312,0.309,0.307,0.305,0.303,0.302,0.301,null,null,null,null,null,null,null,null,0.307,0.31,0.312,0.315,0.317,0.32,0.323,0.325,0.328,0.33,0.332,0.334,0.336,0.338,0.339,0.339,0.34,0.34,0.34,0.339,0.338,0.337,0.335,0.333,0.331,0.329,0.326,0.323,0.321,0.318,0.315,0.274],
+          "peak": [0.334,0.337,0.339,0.341,0.343,0.345,0.347,0.348,0.349,0.35,0.35,0.35,0.349,0.349,0.347,0.346,0.344,0.342,0.34,0.337,0.335,0.332,0.329,0.327,0.324,0.322,0.319,0.317,0.315,0.313,0.312,0.311,null,null,null,null,null,null,null,null,0.317,0.32,0.322,0.325,0.327,0.33,0.333,0.335,0.338,0.34,0.342,0.344,0.346,0.348,0.349,0.349,0.35,0.35,0.35,0.349,0.348,0.347,0.345,0.343,0.341,0.339,0.336,0.333,0.331,0.328,0.325,0.274],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "load",
+          "title": "Load",
+          "value": "112",
+          "detail": "5m 135 · 15m 177 · 60 cores · 99 running · 1 blocked",
+          "tone": "ok",
+          "scale": "400",
+          "average": [0.39,0.4,0.409,0.418,0.426,0.433,0.439,0.443,0.447,0.449,0.45,0.45,0.448,0.445,0.44,0.435,0.428,0.42,0.412,0.403,0.393,0.383,0.373,0.363,0.353,0.344,0.335,0.327,0.319,0.313,0.308,0.304,null,null,null,null,null,null,null,null,0.328,0.336,0.345,0.355,0.365,0.375,0.385,0.395,0.404,0.413,0.422,0.429,0.436,0.441,0.445,0.448,0.45,0.45,0.449,0.446,0.443,0.438,0.431,0.424,0.416,0.407,0.398,0.388,0.378,0.368,0.358,0.281],
+          "peak": [0.465,0.475,0.484,0.493,0.5,0.507,0.514,0.518,0.522,0.524,0.525,0.525,0.523,0.52,0.515,0.51,0.503,0.495,0.487,0.478,0.468,0.458,0.448,0.438,0.428,0.419,0.41,0.401,0.394,0.388,0.383,0.379,null,null,null,null,null,null,null,null,0.403,0.411,0.42,0.43,0.44,0.45,0.46,1,0.479,0.488,0.497,0.504,0.51,0.516,0.52,0.523,0.525,0.525,0.524,0.521,0.518,0.513,0.506,0.499,0.491,0.482,0.473,0.463,0.453,0.443,0.433,0.281],
+          "tones": ["warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","ok","ok","ok","ok","ok","ok","ok","ok","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","ok"]
+        },
+        {
+          "id": "cpu-pressure",
+          "title": "CPU wait",
+          "value": "45%",
+          "detail": "programs waiting for a free CPU",
+          "tone": "danger",
+          "scale": "100%",
+          "average": [0.16,0.166,0.173,0.178,0.184,0.188,0.192,0.195,0.198,0.199,0.2,0.2,0.198,0.196,0.193,0.19,0.185,0.18,0.175,0.168,0.162,0.155,0.149,0.142,0.135,0.129,0.123,0.118,0.113,0.109,0.105,0.103,null,null,null,null,null,null,null,null,0.119,0.124,0.13,0.136,0.143,0.15,0.156,0.163,0.169,0.175,0.181,0.186,0.19,0.194,0.197,0.199,0.2,0.2,0.199,0.198,0.195,0.192,0.188,0.183,0.177,0.171,0.165,0.159,0.152,0.145,0.139,0.432],
+          "peak": [0.31,0.316,0.323,0.328,0.334,0.338,0.342,0.345,0.348,0.349,0.35,0.35,0.348,0.346,0.343,0.34,0.335,0.33,0.325,0.318,0.312,0.305,0.299,0.292,0.285,0.279,0.273,0.268,0.263,0.259,0.255,0.253,null,null,null,null,null,null,null,null,0.269,0.274,0.28,0.286,0.293,0.3,0.306,0.9,0.319,0.325,0.331,0.336,0.34,0.344,0.347,0.349,0.35,0.35,0.349,0.348,0.345,0.342,0.338,0.333,0.327,0.321,0.315,0.309,0.302,0.295,0.289,0.452],
+          "tones": ["warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","ok","ok","ok","ok","ok","ok","ok","ok","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","warning","danger"]
+        },
+        {
+          "id": "memory-pressure",
+          "title": "Memory wait",
+          "value": "0.2%",
+          "detail": "programs waiting for memory · fully stalled 0.1%",
+          "tone": "ok",
+          "scale": "100%",
+          "average": [0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,null,null,null,null,null,null,null,null,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.014],
+          "peak": [0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,null,null,null,null,null,null,null,null,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.12,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.026],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "io-pressure",
+          "title": "Disk wait",
+          "value": "3.0%",
+          "detail": "programs waiting for storage · fully stalled 0.3%",
+          "tone": "ok",
+          "scale": "100%",
+          "average": [0.084,0.087,0.089,0.091,0.093,0.095,0.097,0.098,0.099,0.1,0.1,0.1,0.099,0.099,0.097,0.096,0.094,0.092,0.09,0.087,0.085,0.082,0.079,0.077,0.074,0.072,0.069,0.067,0.065,0.063,0.062,0.061,null,null,null,null,null,null,null,null,0.067,0.07,0.072,0.075,0.077,0.08,0.083,0.085,0.088,0.09,0.092,0.094,0.096,0.098,0.099,0.099,0.1,0.1,0.1,0.099,0.098,0.097,0.095,0.093,0.091,0.089,0.086,0.083,0.081,0.078,0.075,0.036],
+          "peak": [0.144,0.147,0.149,0.151,0.153,0.155,0.157,0.158,0.159,0.16,0.16,0.16,0.159,0.159,0.157,0.156,0.154,0.152,0.15,0.147,0.145,0.142,0.139,0.137,0.134,0.132,0.129,0.127,0.125,0.123,0.122,0.121,null,null,null,null,null,null,null,null,0.127,0.13,0.132,0.135,0.137,0.14,0.143,0.8,0.148,0.15,0.152,0.154,0.156,0.158,0.159,0.159,0.16,0.16,0.16,0.159,0.158,0.157,0.155,0.153,0.151,0.149,0.146,0.143,0.141,0.138,0.135,0.042],
+          "tones": ["ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","warning","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","warning","warning","warning","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok","ok"]
+        },
+        {
+          "id": "disk",
+          "title": "Disk",
+          "value": "73 MiB/s",
+          "detail": "read 0 B/s · write 73 MiB/s",
+          "tone": "ok",
+          "scale": "858 MiB/s",
+          "average": [0.047,0.048,0.049,0.051,0.052,0.053,0.054,0.055,0.055,0.055,0.056,0.055,0.055,0.055,0.054,0.053,0.052,0.051,0.05,0.049,0.047,0.046,0.044,0.043,0.041,0.04,0.038,0.037,0.036,0.035,0.034,0.034,null,null,null,null,null,null,null,null,0.037,0.039,0.04,0.041,0.043,0.044,0.046,0.047,0.049,0.05,0.051,0.052,0.053,0.054,0.055,0.055,0.056,0.056,0.055,0.055,0.054,0.054,0.053,0.052,0.051,0.049,0.048,0.046,0.045,0.043,0.042,0.109],
+          "peak": [0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,null,null,null,null,null,null,null,null,0.133,0.133,0.133,0.133,0.133,0.133,0.133,1,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.134],
+          "tones": null
+        },
+        {
+          "id": "network",
+          "title": "Network",
+          "value": "204 KiB/s",
+          "detail": "in 164 KiB/s · out 41 KiB/s",
+          "tone": "ok",
+          "scale": "57 MiB/s",
+          "average": [0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,null,null,null,null,null,null,null,null,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.033,0.037],
+          "peak": [0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,null,null,null,null,null,null,null,null,0.133,0.133,0.133,0.133,0.133,0.133,0.133,1,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.133,0.071],
+          "tones": null
+        }
+      ],
+      "cores": {
+        "title": "60 cores",
+        "detail": "busiest 100% · 55 at 80% or more",
+        "average": [0.985,0.795,0.964,0.921,0.965,0.889,0.884,0.99,0.893,0.91,0.915,1,0.83,0.995,0.966,0.98,0.884,0.941,0.945,0.789,0.985,0.941,0.96,0.941,0.956,0.867,0.951,0.749,0.895,0.985,0.989,0.925,0.995,0.915,0.743,0.98,1,0.891,0.975,0.941,0.956,0.93,0.849,0.98,0.91,0.9,0.955,0.924,1,0.985,0.955,0.995,0.654,1,1,0.875,0.895,0.941,0.925,0.971],
+        "peak": [0.985,0.795,0.964,0.921,0.965,0.889,0.884,0.99,0.893,0.91,0.915,1,0.83,0.995,0.966,0.98,0.884,0.941,0.945,0.789,0.985,0.941,0.96,0.941,0.956,0.867,0.951,0.749,0.895,0.985,0.989,0.925,0.995,0.915,0.743,0.98,1,0.891,0.975,0.941,0.956,0.93,0.849,0.98,0.91,0.9,0.955,0.924,1,0.985,0.955,0.995,0.654,1,1,0.875,0.895,0.941,0.925,0.971],
+        "tones": ["danger","ok","danger","warning","danger","warning","warning","danger","warning","warning","warning","danger","warning","danger","danger","danger","warning","warning","warning","ok","danger","warning","danger","warning","danger","warning","danger","ok","warning","danger","danger","warning","danger","warning","ok","danger","danger","warning","danger","warning","danger","warning","warning","danger","warning","warning","danger","warning","danger","danger","danger","danger","ok","danger","danger","warning","warning","warning","warning","danger"]
+      },
+      "filesystems": [
+        {
+          "path": "/",
+          "value": "85%",
+          "fraction": 0.853,
+          "detail": "34 GiB free of 244 GiB · ext4",
+          "tone": "warning"
+        },
+        {
+          "path": "/boot",
+          "value": "20%",
+          "fraction": 0.198,
+          "detail": "727 MiB free of 973 MiB · ext4",
+          "tone": "ok"
+        },
+        {
+          "path": "/boot/efi",
+          "value": "1.2%",
+          "fraction": 0.012,
+          "detail": "505 MiB free of 511 MiB · vfat",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/code",
+          "value": "51%",
+          "fraction": 0.51,
+          "detail": "8.8 TiB free of 18 TiB · nfs4",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/data",
+          "value": "49%",
+          "fraction": 0.49,
+          "detail": "8.8 TiB free of 17 TiB · nfs4 · last read 5m ago",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/fast",
+          "value": "80%",
+          "fraction": 0.802,
+          "detail": "667 GiB free of 3.5 TiB · ext4",
+          "tone": "ok"
+        },
+        {
+          "path": "/srv/nas",
+          "value": "51%",
+          "fraction": 0.51,
+          "detail": "8.8 TiB free of 18 TiB · cifs",
+          "tone": "ok"
+        }
+      ],
+      "processes": {
+        "detail": "CPU as % of one core, over the last 10 s",
+        "rows": [
+          {
+            "pid": 4048759,
+            "cpu": "514%",
+            "memory": "689 MiB",
+            "command": "rustc @bazel-out/k8-fastbuild/bin/crates/conformance/conformance-req_exec-capi-test_bin-0.params.expanded",
+            "detail": "pid 4048759"
+          },
+          {
+            "pid": 3830964,
+            "cpu": "103%",
+            "memory": "1.2 GiB",
+            "command": "fuzz-harness-test --nocapture --exact finds_its_floor",
+            "detail": "pid 3830964"
+          },
+          {
+            "pid": 3830999,
+            "cpu": "41%",
+            "memory": "1.5 GiB",
+            "command": "k3s server",
+            "detail": "pid 3830999"
+          },
+          {
+            "pid": 3444096,
+            "cpu": "21%",
+            "memory": "",
+            "command": "[kworker/u240:30-rpciod]",
+            "detail": "pid 3444096"
+          },
+          {
+            "pid": 3077239,
+            "cpu": "11%",
+            "memory": "743 MiB",
+            "command": "Paseo Daemon",
+            "detail": "pid 3077239"
+          },
+          {
+            "pid": 4060448,
+            "cpu": "7.6%",
+            "memory": "188 KiB",
+            "command": "[exe]",
+            "detail": "pid 4060448"
+          },
+          {
+            "pid": 3478347,
+            "cpu": "6.2%",
+            "memory": "506 MiB",
+            "command": "omp --mode rpc-ui --approval-mode yolo --thinking high --session 2026-10-04T21-22-04-920Z_01a108cb-9ff9-73a5-8379-268afef4e8f7.jsonl",
+            "detail": "pid 3478347 · in workspace paseo-companion"
+          },
+          {
+            "pid": 147514,
+            "cpu": "5.9%",
+            "memory": "653 MiB",
+            "command": "omp --mode rpc-ui --approval-mode yolo --thinking high --session 2026-10-31T21-44-39-613Z_01a193eb-ffbd-71ff-846c-81012dd32e9c.jsonl",
+            "detail": "pid 147514 · in workspace Research notes"
+          },
+          {
+            "pid": 361465,
+            "cpu": "5.2%",
+            "memory": "482 MiB",
+            "command": "omp --mode rpc-ui --approval-mode yolo --thinking high --session 2026-11-03T11-34-15-071Z_01a1a130-3b1f-7272-98ee-d282fa5938a1.jsonl",
+            "detail": "pid 361465 · in workspace wiggly-gecko"
+          },
+          {
+            "pid": 3541375,
+            "cpu": "3.5%",
+            "memory": "325 MiB",
+            "command": "chrome --type=renderer --gpu-client-id=11 --crashpad-handler-pid=3529959 --enable-crash-reporter=, --noerrdialogs --user-data-dir=/home/dev/.omp/profiles/personal/run/daemons/2e4fbbfd1ad3ea78/omp.brow",
+            "detail": "pid 3541375 · in workspace paseo-companion"
+          }
+        ]
+      },
+      "error": null
+    }
+  ]
+}

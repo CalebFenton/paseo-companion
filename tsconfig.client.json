@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["react"],
+    "tsBuildInfoFile": "node_modules/.cache/tsc/client.tsbuildinfo"
+  },
+  "include": ["client", "shared", "index.client.tsx"],
+  "exclude": ["**/*.test.ts"]
+}

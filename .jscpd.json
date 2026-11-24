@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/jscpd.json",
+  "threshold": 0,
+  "ignore": ["**/fixtures/**", "**/node_modules/**", "package-lock.json"],
+  "reporters": ["console"]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "promise", "node", "jsdoc", "react", "vitest"],
+  // Type-aware rules run on tsgolint, which builds the same TypeScript programs `tsc -b` checks.
+  "options": { "typeAware": true },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error"
+  },
+  "ignorePatterns": ["fixtures/**"],
+  "rules": {
+    // Off: tag lists that restate the TypeScript signature; doc comments say what the signature cannot.
+    "jsdoc/require-param": "off",
+    "jsdoc/require-returns": "off",
+    // Empty and missing strings, or false and missing booleans, mean the same thing here; 0 and null rarely do.
+    "typescript/strict-boolean-expressions": [
+      "error",
+      { "allowNullableString": true, "allowNullableBoolean": true, "allowNullableNumber": false, "allowAny": false }
+    ],
+    "typescript/no-confusing-void-expression": ["error", { "ignoreArrowShorthand": true }],
+    // zod's `.catch(undefined)` must pass its fallback; the call cannot drop the argument.
+    "unicorn/no-useless-undefined": ["error", { "checkArguments": false }],
+    // Off: it flags every exhaustive `switch` without a `default`, which switch-exhaustiveness-check requires;
+    // tsc's noImplicitReturns already proves each path returns.
+    "typescript/consistent-return": "off",
+    // Like strict-boolean-expressions: `||` on a string falls back on empty as well as missing, which call sites mean.
+    "typescript/prefer-nullish-coalescing": ["error", { "ignorePrimitives": { "string": true } }],
+    // Off: a perf rule against copying in `map`, which pushes code to mutate its inputs; these lists hold a few items.
+    "oxc/no-map-spread": "off",
+    // Off: every parameter would need a `Readonly<>` wrapper; typescript-eslint keeps it out of all presets for that reason.
+    "typescript/prefer-readonly-parameter-types": "off",
+    // Off: the automatic JSX runtime (`"jsx": "react-jsx"`) needs no React in scope.
+    "react/react-in-jsx-scope": "off",
+    // Off: misreads zod's `.catch()` fallback as a promise chain.
+    "unicorn/prefer-top-level-await": "off",
+    // Off: adding `u` or `v` changes what some patterns match, for no gain on ASCII input.
+    "eslint/require-unicode-regexp": "off",
+    // Off: duplicates unicorn/no-negated-condition.
+    "eslint/no-negated-condition": "off",
+    // Off: a count of imports says nothing about a module's design.
+    "import/max-dependencies": "off",
+    // Off: React components and `describe` blocks are long by nature; max-lines bounds the file instead.
+    "eslint/max-lines-per-function": "off",
+    "eslint/max-lines": ["error", { "max": 500, "skipBlankLines": true, "skipComments": true }],
+    // GitHub's GraphQL `__typename` and zod's `__type` are external names.
+    "eslint/no-underscore-dangle": ["error", { "allow": ["__typename", "__type"] }],
+    // The plugin has no logger API: Paseo records a plugin's stderr in the daemon log.
+    "eslint/no-console": ["error", { "allow": ["error", "warn"] }],
+
+    // Opt-in rules from the style and restriction categories that catch real mistakes.
+    "typescript/switch-exhaustiveness-check": ["error", { "considerDefaultExhaustiveForUnions": false }],
+    "typescript/no-unnecessary-condition": "error",
+    "typescript/no-non-null-assertion": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/ban-ts-comment": "error",
+    "typescript/no-import-type-side-effects": "error",
+    "typescript/use-unknown-in-catch-callback-variable": "error",
+    "import/no-cycle": "error",
+    "eslint/complexity": "error",
+    "eslint/no-param-reassign": "error",
+    "eslint/no-empty": "error",
+    "eslint/prefer-const": "error",
+    "eslint/no-var": "error",
+    "unicorn/no-nested-ternary": "error",
+    "unicorn/prefer-node-protocol": "error"
+  },
+  "overrides": [
+    {
+      // Command-line scripts and the live test report to the terminal.
+      "files": ["scripts/**", "e2e/**"],
+      "rules": { "eslint/no-console": "off" }
+    }
+  ]
+}

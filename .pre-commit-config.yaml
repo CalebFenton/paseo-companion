@@ -1,0 +1,93 @@
+# Run by prek (https://prek.j178.dev), installed as a dev dependency; `npm install` installs the hook
+# and `npm run check` runs every hook on every file. Fixers run first (priority 0); the checks then run
+# in parallel. The JavaScript tools run through package.json scripts, so each command has one definition.
+default_install_hook_types: [pre-commit]
+default_stages: [pre-commit]
+
+repos:
+  - repo: builtin
+    hooks:
+      - id: trailing-whitespace
+        priority: 0
+      - id: end-of-file-fixer
+        priority: 0
+      - id: mixed-line-ending
+        args: [--fix=lf]
+        priority: 0
+      - id: check-added-large-files
+        priority: 10
+      - id: check-case-conflict
+        priority: 10
+      - id: check-merge-conflict
+        priority: 10
+      - id: check-executables-have-shebangs
+        priority: 10
+      - id: detect-private-key
+        priority: 10
+
+  # Fixtures are captured from live GitHub and Paseo reads, so a pasted token is a real risk.
+  - repo: https://github.com/betterleaks/betterleaks
+    rev: v1.10.1
+    hooks:
+      - id: betterleaks
+        # Betterleaks loads a repository's own config only when told to; this one allows the usage snapshot's account ids.
+        args: [--config, .betterleaks.toml]
+        priority: 10
+
+  - repo: local
+    hooks:
+      - id: private-text
+        name: Private names, hosts, and paths (.private-patterns)
+        entry: node scripts/check-private.ts
+        language: system
+        types: [text]
+        # The license names the copyright holder on purpose.
+        exclude: ^LICENSE$
+        priority: 10
+      - id: oxfmt
+        name: Format (oxfmt)
+        entry: npm run --silent format --
+        language: system
+        types_or: [ts, tsx, javascript, json, yaml, markdown]
+        priority: 0
+      - id: oxlint
+        name: Lint (oxlint, type-aware)
+        entry: npm run --silent lint
+        language: system
+        files: '\.(ts|tsx|mts)$|^(\.oxlintrc\.json|tsconfig.*\.json|package\.json)$'
+        pass_filenames: false
+        priority: 10
+      - id: typecheck
+        name: Type check (tsc -b)
+        entry: npm run --silent typecheck
+        language: system
+        files: '\.(ts|tsx|mts|json)$'
+        pass_filenames: false
+        priority: 10
+      - id: knip
+        name: Unused files, exports, and dependencies (knip)
+        entry: npm run --silent knip
+        language: system
+        files: '\.(ts|tsx|mts)$|^(knip\.jsonc|package\.json)$'
+        pass_filenames: false
+        priority: 10
+      - id: jscpd
+        name: Duplicated code (jscpd)
+        entry: npm run --silent dupes
+        language: system
+        files: '\.(ts|tsx|mts)$|^\.jscpd\.json$'
+        pass_filenames: false
+        priority: 10
+      - id: vitest
+        name: Unit tests (vitest)
+        entry: npm run --silent test
+        language: system
+        files: '\.(ts|tsx|mts)$|^fixtures/|^package\.json$'
+        pass_filenames: false
+        priority: 10
+      - id: rumdl
+        name: Markdown lint (rumdl)
+        entry: npm run --silent lint:md --
+        language: system
+        types: [markdown]
+        priority: 10

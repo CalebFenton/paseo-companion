@@ -1,0 +1,4213 @@
+{
+  "workspaces": [
+    {
+      "id": "wks_01",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/retry-uploads",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "retry-uploads",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 101,
+          "url": "https://github.com/acme/app/pull/101",
+          "title": "Retry uploads on 503",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/retry-uploads",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/retry-uploads",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_02",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/pin-aws-profile",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "pin-aws-profile",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 102,
+          "url": "https://github.com/acme/app/pull/102",
+          "title": "Pin the AWS profile",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/pin-aws-profile",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/pin-aws-profile",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_03",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/rename-queue",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "rename-queue",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 103,
+          "url": "https://github.com/acme/app/pull/103",
+          "title": "Rename the queue",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/rename-queue",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/rename-queue",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_04",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/split-parser",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "split-parser",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 104,
+          "url": "https://github.com/acme/app/pull/104",
+          "title": "Split the parser",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/split-parser",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/split-parser",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_05",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/lazy-headers",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "lazy-headers",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 105,
+          "url": "https://github.com/acme/app/pull/105",
+          "title": "Parse headers lazily",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/lazy-headers",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/lazy-headers",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_06",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/cache-headers",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "cache-headers",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 106,
+          "url": "https://github.com/acme/app/pull/106",
+          "title": "Cache parsed headers",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/cache-headers",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/cache-headers",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_07",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/review-exports",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "review-exports",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 107,
+          "url": "https://github.com/acme/app/pull/107",
+          "title": "Stream large exports",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/review-exports",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/review-exports",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_08",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/native-1",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "native-1",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 108,
+          "url": "https://github.com/acme/app/pull/108",
+          "title": "Native stack, layer 1",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/native-1",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/native-1",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_09",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/native-2",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "native-2",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 109,
+          "url": "https://github.com/acme/app/pull/109",
+          "title": "Native stack, layer 2",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/native-2",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/native-2",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_10",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/merged-on-github",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "merged-on-github",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 110,
+          "url": "https://github.com/acme/app/pull/110",
+          "title": "Already merged",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/merged-on-github",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/merged-on-github",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_11",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/review-thumbnails",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "review-thumbnails",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 111,
+          "url": "https://github.com/acme/app/pull/111",
+          "title": "Faster thumbnails",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/review-thumbnails",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/review-thumbnails",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_12",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/pin-aws-profile-2",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "pin-aws-profile-2",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 102,
+          "url": "https://github.com/acme/app/pull/102",
+          "title": "Pin the AWS profile",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/pin-aws-profile-2",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/pin-aws-profile-2",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_13",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/waiting",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "waiting",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 112,
+          "url": "https://github.com/acme/app/pull/112",
+          "title": "Waiting on review",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/waiting",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/waiting",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_14",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/draft",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "draft",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 113,
+          "url": "https://github.com/acme/app/pull/113",
+          "title": "Draft idea",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/draft",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/draft",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_15",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/checks",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "checks",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 114,
+          "url": "https://github.com/acme/app/pull/114",
+          "title": "Checks running",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/checks",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/checks",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_16",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/behind",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "behind",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 115,
+          "url": "https://github.com/acme/app/pull/115",
+          "title": "Behind main",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/behind",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/behind",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_17",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/gone",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "gone",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 116,
+          "url": "https://github.com/acme/app/pull/116",
+          "title": "Deleted upstream",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/gone",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/gone",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_18",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/merged-in-paseo",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "merged-in-paseo",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 117,
+          "url": "https://github.com/acme/app/pull/117",
+          "title": "Merged",
+          "state": "merged",
+          "baseRefName": "main",
+          "headRefName": "me/merged-in-paseo",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/merged-in-paseo",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_19",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/no-pr",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "no-pr",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": null,
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/no-pr",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_20",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/untracked",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "untracked",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      }
+    },
+    {
+      "id": "wks_21",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/archiving",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "archiving",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": "2026-10-01T11:00:00Z",
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 118,
+          "url": "https://github.com/acme/app/pull/118",
+          "title": "On its way out",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "me/archiving",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/archiving",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_22",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/api",
+      "workspaceDirectory": "/repos/api",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "other-project",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": null,
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "main",
+        "remoteUrl": "https://github.com/acme/api",
+        "isPaseoOwnedWorktree": false,
+        "isDirty": false
+      }
+    },
+    {
+      "id": "wks_23",
+      "projectId": "prj_app_reviews",
+      "projectDisplayName": "app reviews",
+      "projectRootPath": "/repos/app-reviews",
+      "workspaceDirectory": "/repos/app-reviews-worktrees/review-204",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "review-204",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": false,
+        "pullRequest": null,
+        "error": null
+      },
+      "gitRuntime": {
+        "currentBranch": null,
+        "remoteUrl": "git@github.com:acme/app.git"
+      }
+    },
+    {
+      "id": "wks_24",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/review-205",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "review-205",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": false,
+        "pullRequest": null,
+        "error": null
+      },
+      "gitRuntime": {
+        "currentBranch": null,
+        "remoteUrl": "git@github.com:acme/app.git"
+      }
+    },
+    {
+      "id": "wks_25",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/api",
+      "workspaceDirectory": "/repos/api-worktrees/api-search",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "api-search",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": null,
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "ivan/fast-search",
+        "remoteUrl": "https://github.com/acme/api"
+      }
+    },
+    {
+      "id": "wks_26",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/review-206",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "review-206",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": false,
+        "pullRequest": null,
+        "error": null
+      },
+      "gitRuntime": {
+        "currentBranch": "ivan/fast-search",
+        "remoteUrl": "git@github.com:acme/app.git"
+      }
+    },
+    {
+      "id": "wks_27",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "app-main",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": null,
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "main",
+        "remoteUrl": "git@github.com:acme/app.git"
+      }
+    },
+    {
+      "id": "wks_28",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/deleted-directory",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "deleted-directory",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      }
+    },
+    {
+      "id": "wks_29",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/release-fix",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "release-fix",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 119,
+          "url": "https://github.com/acme/app/pull/119",
+          "title": "Into develop after a release: a protected base is no stack",
+          "state": "open",
+          "baseRefName": "develop",
+          "headRefName": "me/release-fix",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "me/release-fix",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_30",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app-worktrees/review-bobs",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "review-bobs",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "githubRuntime": {
+        "featuresEnabled": true,
+        "pullRequest": {
+          "number": 120,
+          "url": "https://github.com/acme/app/pull/120",
+          "title": "Reviewed at its head and mergeable: the author merges it",
+          "state": "open",
+          "baseRefName": "main",
+          "headRefName": "bob/pr-120",
+          "isMerged": false,
+          "isDraft": false,
+          "checksStatus": "success",
+          "reviewDecision": null,
+          "repoOwner": "acme",
+          "repoName": "app"
+        },
+        "refreshedAt": "2026-10-01T12:00:00Z"
+      },
+      "gitRuntime": {
+        "currentBranch": "bob/pr-120",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      }
+    },
+    {
+      "id": "wks_31",
+      "projectId": "prj_app",
+      "projectDisplayName": "app",
+      "projectRootPath": "/repos/app",
+      "workspaceDirectory": "/repos/app/.worktrees/checked-out-then-moved",
+      "projectKind": "git",
+      "kind": "worktree",
+      "name": "checked-out-then-moved",
+      "title": null,
+      "status": "done",
+      "statusEnteredAt": "2026-10-01T08:00:00Z",
+      "archivingAt": null,
+      "diffStat": {
+        "additions": 12,
+        "deletions": 3
+      },
+      "gitRuntime": {
+        "currentBranch": "me/waiting",
+        "remoteUrl": "git@github.com:acme/app.git",
+        "isPaseoOwnedWorktree": true,
+        "isDirty": false,
+        "aheadBehind": {
+          "ahead": 0,
+          "behind": 0
+        },
+        "aheadOfOrigin": 0,
+        "behindOfOrigin": 0
+      },
+      "metadata": {
+        "paseo-companion.pullRequest": {
+          "owner": "acme",
+          "repo": "app",
+          "number": 112
+        }
+      }
+    },
+    {
+      "id": "wks_malformed",
+      "name": "No project root"
+    }
+  ],
+  "projects": {
+    "requestId": "req_projects",
+    "projects": [
+      {
+        "projectId": "remote:github.com/Acme/app",
+        "projectKey": "remote:github.com/acme/app",
+        "projectDisplayName": "app",
+        "projectCustomName": null,
+        "projectCustomIconRevision": null,
+        "projectIconRevision": "automatic:none:v1",
+        "projectRootPath": "/repos/app",
+        "projectKind": "git"
+      },
+      {
+        "projectId": "remote:github.com/Acme/api",
+        "projectKey": "remote:github.com/acme/api",
+        "projectDisplayName": "api",
+        "projectCustomName": null,
+        "projectCustomIconRevision": null,
+        "projectIconRevision": "automatic:none:v1",
+        "projectRootPath": "/repos/api",
+        "projectKind": "git"
+      },
+      {
+        "projectId": "host:srv_test:/repos/scratch",
+        "projectKey": "host:srv_test:/repos/scratch",
+        "projectDisplayName": "scratch",
+        "projectCustomName": null,
+        "projectCustomIconRevision": null,
+        "projectIconRevision": "automatic:none:v1",
+        "projectRootPath": "/repos/scratch",
+        "projectKind": "git"
+      },
+      {
+        "projectId": "remote:gitlab.com/acme/docs",
+        "projectKey": "remote:gitlab.com/acme/docs",
+        "projectDisplayName": "docs-mirror",
+        "projectCustomName": null,
+        "projectCustomIconRevision": null,
+        "projectIconRevision": "automatic:none:v1",
+        "projectRootPath": "/repos/docs-mirror",
+        "projectKind": "git"
+      },
+      {
+        "projectId": "remote:github.com/Acme/app",
+        "projectKey": "remote:github.com/acme/app",
+        "projectDisplayName": "app reviews",
+        "projectCustomName": "app reviews",
+        "projectCustomIconRevision": null,
+        "projectIconRevision": "automatic:none:v1",
+        "projectRootPath": "/repos/app-reviews",
+        "projectKind": "git"
+      }
+    ]
+  },
+  "checkouts": {
+    "wks_18": {
+      "head": "head117",
+      "branch": "me/merged-in-paseo"
+    },
+    "wks_19": {
+      "head": "headnopr",
+      "branch": "me/no-pr"
+    },
+    "wks_20": {
+      "head": "headuntracked",
+      "branch": "me/untracked"
+    },
+    "wks_22": {
+      "head": "headapi-main",
+      "branch": "main"
+    },
+    "wks_23": {
+      "head": "head204",
+      "branch": null
+    },
+    "wks_24": {
+      "head": "head205-old",
+      "branch": null
+    },
+    "wks_25": {
+      "head": "headapi-search",
+      "branch": "ivan/fast-search"
+    },
+    "wks_26": {
+      "head": "local206",
+      "branch": "ivan/fast-search"
+    },
+    "wks_27": {
+      "head": "headmain",
+      "branch": "main"
+    }
+  },
+  "answers": {
+    "reviewRequests": {
+      "data": {
+        "viewer": {
+          "login": "me"
+        },
+        "reviewRequests": {
+          "nodes": [
+            {
+              "id": "PR_111"
+            },
+            {
+              "id": "PR_201"
+            },
+            {
+              "id": "PR_202"
+            },
+            {
+              "id": "PR_222"
+            },
+            {
+              "id": "PR_203"
+            },
+            {
+              "id": "PR_211"
+            },
+            null,
+            {
+              "id": "PR_301"
+            },
+            {
+              "id": "PR_221"
+            },
+            {
+              "id": "PR_210"
+            },
+            {
+              "id": "PR_204"
+            },
+            {
+              "id": "PR_205"
+            },
+            {
+              "id": "PR_206"
+            },
+            {
+              "id": "PR_207"
+            },
+            {
+              "id": "PR_401"
+            },
+            {
+              "id": "PR_220"
+            },
+            {
+              "id": "PR_lost"
+            }
+          ]
+        }
+      }
+    },
+    "authored": {
+      "data": {
+        "viewer": {
+          "login": "me"
+        },
+        "authored": {
+          "nodes": [
+            {
+              "id": "PR_101",
+              "number": 101,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            },
+            {
+              "id": "PR_acme_app_601",
+              "number": 601,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            },
+            {
+              "id": "PR_acme_app_602",
+              "number": 602,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            },
+            {
+              "id": "PR_acme_app_603",
+              "number": 603,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            },
+            {
+              "id": "PR_acme_app_604",
+              "number": 604,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            },
+            {
+              "id": "PR_other_lib_7",
+              "number": 7,
+              "repository": {
+                "nameWithOwner": "other/lib"
+              }
+            },
+            {
+              "id": "PR_other_lib_8",
+              "number": 8,
+              "repository": {
+                "nameWithOwner": "other/lib"
+              }
+            },
+            {
+              "id": "PR_acme_app_607",
+              "number": 607,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            },
+            {
+              "id": "PR_acme_app_608",
+              "number": 608,
+              "repository": {
+                "nameWithOwner": "acme/app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "workspaces-0": {
+      "data": {
+        "viewer": {
+          "login": "me"
+        },
+        "p0": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/101",
+            "number": 101,
+            "title": "Retry uploads on 503",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-101",
+            "headRefOid": "head101",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "CHANGES_REQUESTED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "CHANGES_REQUESTED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "COMMENTED",
+                  "submittedAt": "2026-10-01T09:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "bob"
+                  }
+                },
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "CHANGES_REQUESTED",
+                  "submittedAt": "2026-10-01T11:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "bob"
+                  }
+                },
+                {
+                  "__typename": "IssueComment",
+                  "createdAt": "2026-10-01T11:30:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "carol"
+                  }
+                },
+                {
+                  "__typename": "IssueComment",
+                  "createdAt": "2026-10-01T11:40:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "Bot",
+                    "login": "ci-bot"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": [
+                {
+                  "isResolved": false,
+                  "comments": {
+                    "nodes": [
+                      {
+                        "viewerDidAuthor": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "isResolved": false,
+                  "comments": {
+                    "nodes": [
+                      {
+                        "viewerDidAuthor": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "isResolved": true,
+                  "comments": {
+                    "nodes": [
+                      {
+                        "viewerDidAuthor": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "p1": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/102",
+            "number": 102,
+            "title": "Pin the AWS profile",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-102",
+            "headRefOid": "head102",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "CHANGES_REQUESTED",
+                  "submittedAt": "2026-10-01T11:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "bob"
+                  }
+                },
+                {
+                  "__typename": "HeadRefForcePushedEvent",
+                  "createdAt": "2026-10-01T12:00:00Z",
+                  "actor": {
+                    "__typename": "User",
+                    "login": "me"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p2": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/103",
+            "number": 103,
+            "title": "Rename the queue",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-103",
+            "headRefOid": "head103",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "DIRTY",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p3": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/104",
+            "number": 104,
+            "title": "Split the parser",
+            "createdAt": "2026-09-29T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-104",
+            "headRefOid": "head104",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": null,
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p4": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/105",
+            "number": 105,
+            "title": "Parse headers lazily",
+            "createdAt": "2026-09-29T09:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "me/split-parser",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": [
+                  {
+                    "number": 104,
+                    "state": "OPEN"
+                  }
+                ]
+              }
+            },
+            "headRefName": "me/pr-105",
+            "headRefOid": "head105",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": null,
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p5": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/106",
+            "number": 106,
+            "title": "Cache parsed headers",
+            "createdAt": "2026-09-28T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "me/old-base",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": [
+                  {
+                    "number": 90,
+                    "state": "MERGED"
+                  }
+                ]
+              }
+            },
+            "headRefName": "me/pr-106",
+            "headRefOid": "head106",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": null,
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p6": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/107",
+            "number": 107,
+            "title": "Stream large exports",
+            "createdAt": "2026-09-29T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "alice/pr-107",
+            "headRefOid": "head107-new",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "alice"
+            },
+            "viewerLatestReview": {
+              "state": "CHANGES_REQUESTED",
+              "submittedAt": "2026-10-01T10:00:00Z",
+              "commit": {
+                "oid": "head107-old"
+              }
+            },
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "COMMENTED",
+                  "submittedAt": "2026-10-01T10:00:00Z",
+                  "viewerDidAuthor": true,
+                  "author": {
+                    "__typename": "User",
+                    "login": "me"
+                  }
+                },
+                {
+                  "__typename": "IssueComment",
+                  "createdAt": "2026-10-01T11:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "alice"
+                  }
+                },
+                {
+                  "__typename": "IssueComment",
+                  "createdAt": "2026-10-01T09:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "alice"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p7": {
+          "pullRequest": {
+            "stack": {
+              "entries": {
+                "nodes": [
+                  {
+                    "position": 1,
+                    "pullRequest": {
+                      "number": 108,
+                      "state": "OPEN",
+                      "isDraft": false,
+                      "mergeStateStatus": "CLEAN"
+                    }
+                  },
+                  {
+                    "position": 2,
+                    "pullRequest": {
+                      "number": 109,
+                      "state": "OPEN",
+                      "isDraft": false,
+                      "mergeStateStatus": "CLEAN"
+                    }
+                  }
+                ]
+              }
+            },
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/108",
+            "number": 108,
+            "title": "Native stack, layer 1",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-108",
+            "headRefOid": "head108",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p8": {
+          "pullRequest": {
+            "stack": {
+              "entries": {
+                "nodes": [
+                  {
+                    "position": 1,
+                    "pullRequest": {
+                      "number": 108,
+                      "state": "OPEN",
+                      "isDraft": false,
+                      "mergeStateStatus": "CLEAN"
+                    }
+                  },
+                  {
+                    "position": 2,
+                    "pullRequest": {
+                      "number": 109,
+                      "state": "OPEN",
+                      "isDraft": false,
+                      "mergeStateStatus": "CLEAN"
+                    }
+                  }
+                ]
+              }
+            },
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/109",
+            "number": 109,
+            "title": "Native stack, layer 2",
+            "createdAt": "2026-09-30T08:30:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "me/native-1",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": [
+                  {
+                    "number": 108,
+                    "state": "OPEN"
+                  }
+                ]
+              }
+            },
+            "headRefName": "me/pr-109",
+            "headRefOid": "head109",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p9": {
+          "pullRequest": {
+            "stack": null,
+            "state": "MERGED",
+            "url": "https://github.com/acme/app/pull/110",
+            "number": 110,
+            "title": "Already merged",
+            "createdAt": "2026-09-27T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-110",
+            "headRefOid": "head110",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "UNKNOWN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p10": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/111",
+            "number": 111,
+            "title": "Faster thumbnails",
+            "createdAt": "2026-10-04T09:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "alice/pr-111",
+            "headRefOid": "head111",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "alice"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p11": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/112",
+            "number": 112,
+            "title": "Waiting on review",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-112",
+            "headRefOid": "head112",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p12": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/113",
+            "number": 113,
+            "title": "Draft idea",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-113",
+            "headRefOid": "head113",
+            "isCrossRepository": false,
+            "isDraft": true,
+            "mergeStateStatus": "DRAFT",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": {
+                      "state": "FAILURE"
+                    }
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p13": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/114",
+            "number": 114,
+            "title": "Checks running",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-114",
+            "headRefOid": "head114",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "UNSTABLE",
+            "reviewDecision": null,
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": {
+                      "state": "PENDING"
+                    }
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p14": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/115",
+            "number": 115,
+            "title": "Behind, nobody asked to review",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "me/pr-115",
+            "headRefOid": "head115",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BEHIND",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": []
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        }
+      }
+    },
+    "workspaces-1": {
+      "data": {
+        "viewer": {
+          "login": "me"
+        },
+        "p15": null,
+        "p16": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/119",
+            "number": 119,
+            "title": "Into develop after a release: a protected base is no stack",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "develop",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 3
+              },
+              "associatedPullRequests": {
+                "nodes": [
+                  {
+                    "number": 130,
+                    "state": "MERGED"
+                  }
+                ]
+              }
+            },
+            "headRefName": "me/release-fix",
+            "headRefOid": "head119",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "CHANGES_REQUESTED",
+                  "submittedAt": "2026-10-01T11:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "bob"
+                  }
+                },
+                {
+                  "__typename": "HeadRefForcePushedEvent",
+                  "createdAt": "2026-10-01T12:00:00Z",
+                  "actor": {
+                    "__typename": "User",
+                    "login": "me"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        },
+        "p17": {
+          "pullRequest": {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/120",
+            "number": 120,
+            "title": "Reviewed at its head and mergeable: the author merges it",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "bob/pr-120",
+            "headRefOid": "head120",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": true
+                }
+              ]
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "bob"
+            },
+            "viewerLatestReview": {
+              "state": "APPROVED",
+              "submittedAt": "2026-10-01T11:00:00Z",
+              "commit": {
+                "oid": "head120"
+              }
+            },
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        }
+      },
+      "errors": [
+        {
+          "message": "Could not resolve to a PullRequest with the number of 116."
+        }
+      ]
+    },
+    "reviewRequests-0": {
+      "data": {
+        "nodes": [
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/111",
+            "number": 111,
+            "title": "Faster thumbnails",
+            "createdAt": "2026-10-04T09:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "alice/pr-111",
+            "headRefOid": "head111",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "alice"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/201",
+            "number": 201,
+            "title": "Add an audit log",
+            "createdAt": "2026-09-28T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "carol/pr-201",
+            "headRefOid": "head201",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "carol"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/202",
+            "number": 202,
+            "title": "Bump the SDK",
+            "createdAt": "2026-09-27T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "dave/pr-202",
+            "headRefOid": "head202",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "dave"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/222",
+            "number": 222,
+            "title": "Bump biome: folded, oldest first",
+            "createdAt": "2026-10-04T20:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "dependabot/npm/biome",
+            "headRefOid": "head222",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "Bot",
+              "login": "dependabot"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/203",
+            "number": 203,
+            "title": "Tidy the CLI flags",
+            "createdAt": "2026-09-29T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "erin/pr-203",
+            "headRefOid": "head203-new",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "APPROVED",
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                },
+                {
+                  "state": "COMMENTED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "erin"
+            },
+            "viewerLatestReview": {
+              "state": "COMMENTED",
+              "submittedAt": "2026-10-01T09:00:00Z",
+              "commit": {
+                "oid": "head203-old"
+              }
+            },
+            "viewerLatestReviewRequest": {
+              "id": "RR_203"
+            },
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "COMMENTED",
+                  "submittedAt": "2026-10-01T09:00:00Z",
+                  "viewerDidAuthor": true,
+                  "author": {
+                    "__typename": "User",
+                    "login": "me"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/211",
+            "number": 211,
+            "title": "Stacked: wire the API",
+            "createdAt": "2026-09-30T11:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "frank/models",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": [
+                  {
+                    "number": 210,
+                    "state": "OPEN"
+                  }
+                ]
+              }
+            },
+            "headRefName": "frank/pr-211",
+            "headRefOid": "head211",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "frank"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/api/pull/301",
+            "number": 301,
+            "title": "Rate-limit webhooks",
+            "createdAt": "2026-10-05T11:15:00Z",
+            "repository": {
+              "nameWithOwner": "acme/api",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "grace/pr-301",
+            "headRefOid": "head301",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "grace"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/221",
+            "number": 221,
+            "title": "Bump vitest: folded with the other bot updates",
+            "createdAt": "2026-09-25T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "dependabot/npm/vitest",
+            "headRefOid": "head221",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "Bot",
+              "login": "dependabot"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/210",
+            "number": 210,
+            "title": "Stacked: add the models",
+            "createdAt": "2026-09-30T10:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "frank/pr-210",
+            "headRefOid": "head210",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "frank"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/204",
+            "number": 204,
+            "title": "Detached at its head: matched by HEAD",
+            "createdAt": "2026-09-29T15:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "heidi/pr-204",
+            "headRefOid": "head204",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "heidi"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/205",
+            "number": 205,
+            "title": "Detached at the commit last reviewed: matched by HEAD",
+            "createdAt": "2026-09-30T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "judy/pr-205",
+            "headRefOid": "head205-new",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "judy"
+            },
+            "viewerLatestReview": {
+              "state": "COMMENTED",
+              "submittedAt": "2026-10-01T09:00:00Z",
+              "commit": {
+                "oid": "head205-old"
+              }
+            },
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "COMMENTED",
+                  "submittedAt": "2026-10-01T09:00:00Z",
+                  "viewerDidAuthor": true,
+                  "author": {
+                    "__typename": "User",
+                    "login": "me"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/206",
+            "number": 206,
+            "title": "On its branch with Paseo's GitHub off: matched by branch",
+            "createdAt": "2026-10-03T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "ivan/fast-search",
+            "headRefOid": "head206",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "ivan"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/207",
+            "number": 207,
+            "title": "From a fork's main: no workspace on main holds it",
+            "createdAt": "2026-10-02T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "main",
+            "headRefOid": "head207",
+            "isCrossRepository": true,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "kim"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/docs/pull/401",
+            "number": 401,
+            "title": "No Paseo project clones its repository",
+            "createdAt": "2026-10-05T06:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/docs",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "liam/pr-401",
+            "headRefOid": "head401",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "User",
+              "login": "liam"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          },
+          {
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/220",
+            "number": 220,
+            "title": "Bump zod: a bot's update, folded",
+            "createdAt": "2026-09-21T12:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "dependabot/npm/zod",
+            "headRefOid": "head220",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": false,
+            "author": {
+              "__typename": "Bot",
+              "login": "dependabot"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            }
+          }
+        ]
+      }
+    },
+    "reviewRequests-1": {
+      "error": "gh: unexpected end of JSON input"
+    },
+    "authored-0": {
+      "data": {
+        "nodes": [
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/601",
+            "number": 601,
+            "title": "Checks failing, nobody asked to review",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/601",
+            "headRefOid": "oid601",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": {
+                      "state": "FAILURE"
+                    }
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": []
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/602",
+            "number": 602,
+            "title": "Only Copilot reviews it, conflicts",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/602",
+            "headRefOid": "oid602",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "DIRTY",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "COMMENTED",
+                  "submittedAt": "2026-11-02T10:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "Bot",
+                    "login": "copilot-pull-request-reviewer"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "Bot"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/603",
+            "number": 603,
+            "title": "Reviewer asked, in no workspace",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/603",
+            "headRefOid": "oid603",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-11-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/604",
+            "number": 604,
+            "title": "Draft with conflicts",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/604",
+            "headRefOid": "oid604",
+            "isCrossRepository": false,
+            "isDraft": true,
+            "mergeStateStatus": "DIRTY",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": []
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/other/lib/pull/7",
+            "number": 7,
+            "title": "Approved where you cannot merge",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "other/lib",
+              "viewerPermission": "READ",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/7",
+            "headRefOid": "oid7",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": null,
+            "latestOpinionatedReviews": {
+              "nodes": [
+                {
+                  "state": "APPROVED",
+                  "viewerDidAuthor": false
+                }
+              ]
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-11-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": []
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/other/lib/pull/8",
+            "number": 8,
+            "title": "Clean where you cannot merge",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "other/lib",
+              "viewerPermission": "READ",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/8",
+            "headRefOid": "oid8",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "CLEAN",
+            "reviewDecision": null,
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": []
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-11-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": []
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/607",
+            "number": 607,
+            "title": "Yours in no workspace, new comment",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/607",
+            "headRefOid": "oid607",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "IssueComment",
+                  "createdAt": "2026-11-05T10:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "carol"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": [
+                {
+                  "requestedReviewer": {
+                    "__typename": "User"
+                  }
+                }
+              ]
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          },
+          {
+            "stack": null,
+            "state": "OPEN",
+            "url": "https://github.com/acme/app/pull/608",
+            "number": 608,
+            "title": "Reviewed, you replied",
+            "createdAt": "2026-09-30T08:00:00Z",
+            "repository": {
+              "nameWithOwner": "acme/app",
+              "viewerPermission": "WRITE",
+              "defaultBranchRef": {
+                "name": "main"
+              }
+            },
+            "baseRefName": "main",
+            "baseRef": {
+              "refUpdateRule": null,
+              "rules": {
+                "totalCount": 0
+              },
+              "associatedPullRequests": {
+                "nodes": []
+              }
+            },
+            "headRefName": "feature/608",
+            "headRefOid": "oid608",
+            "isCrossRepository": false,
+            "isDraft": false,
+            "mergeStateStatus": "BLOCKED",
+            "reviewDecision": "REVIEW_REQUIRED",
+            "latestOpinionatedReviews": {
+              "nodes": []
+            },
+            "viewerDidAuthor": true,
+            "author": {
+              "__typename": "User",
+              "login": "me"
+            },
+            "viewerLatestReview": null,
+            "viewerLatestReviewRequest": null,
+            "timelineItems": {
+              "nodes": [
+                {
+                  "__typename": "PullRequestReview",
+                  "state": "COMMENTED",
+                  "submittedAt": "2026-11-02T10:00:00Z",
+                  "viewerDidAuthor": false,
+                  "author": {
+                    "__typename": "User",
+                    "login": "carol"
+                  }
+                },
+                {
+                  "__typename": "IssueComment",
+                  "createdAt": "2026-11-03T10:00:00Z",
+                  "viewerDidAuthor": true,
+                  "author": {
+                    "__typename": "User",
+                    "login": "me"
+                  }
+                }
+              ]
+            },
+            "commits": {
+              "nodes": [
+                {
+                  "commit": {
+                    "committedDate": "2026-10-01T10:00:00Z",
+                    "statusCheckRollup": null
+                  }
+                }
+              ]
+            },
+            "reviewRequests": {
+              "nodes": []
+            },
+            "reviewThreads": {
+              "nodes": []
+            }
+          }
+        ]
+      }
+    }
+  },
+  "now": 1791201600000
+}

@@ -1,0 +1,386 @@
+{
+  "now": 1791158460000,
+  "profiles": [
+    {
+      "profile": "default",
+      "usage": {
+        "generatedAt": 1791158481012,
+        "reports": [
+          {
+            "provider": "openai-codex",
+            "fetchedAt": 1791158459191,
+            "limits": [
+              {
+                "id": "openai-codex:primary",
+                "label": "7 days",
+                "scope": { "provider": "openai-codex", "windowId": "7d", "shared": true },
+                "window": { "id": "7d", "label": "7 days", "durationMs": 604800000, "resetsAt": 1791226860000 },
+                "amount": { "used": 26, "limit": 100, "remaining": 74, "usedFraction": 0.26, "remainingFraction": 0.74, "unit": "percent" },
+                "status": "ok"
+              }
+            ],
+            "resetCredits": {
+              "availableCount": 2,
+              "credits": [
+                { "grantedAt": "2026-09-22T20:36:33.456130Z", "expiresAt": "2026-10-22T20:36:33.456130Z", "status": "available", "usable": false, "requiresLimit": true },
+                { "grantedAt": "2026-09-29T19:04:18.209420Z", "expiresAt": "2026-10-29T19:04:18.209420Z", "status": "available" }
+              ]
+            },
+            "metadata": {
+              "planType": "self_serve_business_prolite",
+              "allowed": true,
+              "limitReached": false,
+              "email": "dev@acme.dev",
+              "accountId": "5d1c2f0e-6a4b-4c0e-9a51-2b7f3c9d8e10",
+              "meterStates": { "chat": { "allowed": true, "limitReached": false } },
+              "orgId": "0e9a7b6c-1d2e-4f30-8a41-5b6c7d8e9f01",
+              "orgName": "self_serve_business_prolite"
+            }
+          },
+          {
+            "provider": "xai-oauth",
+            "fetchedAt": 1791158459911,
+            "limits": [
+              {
+                "id": "xai-oauth:credits:1w",
+                "label": "SuperGrok Weekly Credits",
+                "scope": { "provider": "xai-oauth", "accountId": "e960b8af-0000-4e9f-8bbf-a4e69be85cfb", "windowId": "1w", "shared": true },
+                "window": { "id": "1w", "label": "Weekly", "durationMs": 604800000, "resetsAt": 1791476659457 },
+                "amount": { "used": 4, "limit": 100, "remaining": 96, "usedFraction": 0.04, "remainingFraction": 0.96, "unit": "percent" },
+                "status": "ok"
+              }
+            ],
+            "metadata": {
+              "endpoint": "https://cli-chat-proxy.grok.com/v1/billing?format=credits",
+              "billingKind": "weekly",
+              "accountId": "e960b8af-0000-4e9f-8bbf-a4e69be85cfb",
+              "email": "me@example.org"
+            }
+          },
+          {
+            "provider": "anthropic",
+            "fetchedAt": 1791158159450,
+            "limits": [
+              {
+                "id": "anthropic:5h",
+                "label": "Claude 5 Hour",
+                "scope": { "provider": "anthropic", "windowId": "5h", "shared": true },
+                "window": { "id": "5h", "label": "5 Hour", "durationMs": 18000000, "resetsAt": 1791160800406 },
+                "amount": { "used": 21, "limit": 100, "remaining": 79, "usedFraction": 0.21, "remainingFraction": 0.79, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d",
+                "label": "Claude 7 Day",
+                "scope": { "provider": "anthropic", "windowId": "7d", "shared": true },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791280800406 },
+                "amount": { "used": 77, "limit": 100, "remaining": 23, "usedFraction": 0.77, "remainingFraction": 0.23, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d:fable",
+                "label": "Claude 7 Day (Fable)",
+                "scope": { "provider": "anthropic", "windowId": "7d", "tier": "fable" },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791280800407 },
+                "amount": { "used": 100, "limit": 100, "remaining": 0, "usedFraction": 1, "remainingFraction": 0, "unit": "percent" },
+                "status": "exhausted"
+              }
+            ],
+            "metadata": {
+              "endpoint": "https://api.anthropic.com/api/oauth/usage",
+              "accountId": "b2c4d6e8-1111-4a2b-8c3d-4e5f6a7b8c9d",
+              "email": "me@gmail.com",
+              "orgId": "b6ab11d8-2b6d-4493-8129-7b1427209dd7",
+              "orgName": "me@gmail.com's Organization"
+            },
+            "resetCredits": { "availableCount": 0, "redeemableCount": 0, "eligible": false, "reason": "not_at_wall", "credits": [] }
+          },
+          {
+            "provider": "ollama-cloud",
+            "fetchedAt": 1791158100000,
+            "limits": [],
+            "metadata": { "endpoint": "https://ollama.com/api/me" }
+          }
+        ],
+        "accountsWithoutUsage": [
+          { "provider": "google-gemini-cli", "type": "oauth", "projectId": "gemini-proj-7" }
+        ],
+        "disabledCredentials": [],
+        "capacity": {
+          "openai-codex": [{ "window": "7d", "durationMs": 604800000, "meter": "chat", "accounts": 1, "usedAccounts": 0.26, "remainingAccounts": 0.74 }],
+          "anthropic": [{ "window": "5h", "durationMs": 18000000, "accounts": 1, "usedAccounts": 0.21, "remainingAccounts": 0.79 }]
+        }
+      }
+    },
+    {
+      "profile": "acme",
+      "usage": {
+        "generatedAt": 1791158480100,
+        "reports": [
+          {
+            "provider": "anthropic",
+            "fetchedAt": 1791158459300,
+            "limits": [
+              {
+                "id": "anthropic:5h",
+                "label": "Claude 5 Hour",
+                "scope": { "provider": "anthropic", "windowId": "5h", "shared": true },
+                "window": { "id": "5h", "label": "5 Hour", "durationMs": 18000000, "resetsAt": 1791167400000 },
+                "amount": { "used": 45, "limit": 100, "remaining": 55, "usedFraction": 0.45, "remainingFraction": 0.55, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d",
+                "label": "Claude 7 Day",
+                "scope": { "provider": "anthropic", "windowId": "7d", "shared": true },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791370800000 },
+                "amount": { "used": 93, "limit": 100, "remaining": 7, "usedFraction": 0.93, "remainingFraction": 0.07, "unit": "percent" },
+                "status": "warning"
+              },
+              {
+                "id": "anthropic:7d:fable",
+                "label": "Claude 7 Day (Fable)",
+                "scope": { "provider": "anthropic", "windowId": "7d", "tier": "fable" },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791370800000 },
+                "amount": { "used": 12, "limit": 100, "remaining": 88, "usedFraction": 0.12, "remainingFraction": 0.88, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:extra",
+                "label": "Claude Extra Usage",
+                "scope": { "provider": "anthropic", "windowId": "extra" },
+                "amount": { "used": 74.97, "limit": 500, "remaining": 425.03, "usedFraction": 0.14994, "remainingFraction": 0.85006, "unit": "usd" },
+                "status": "ok"
+              }
+            ],
+            "metadata": {
+              "endpoint": "https://api.anthropic.com/api/oauth/usage",
+              "accountId": "acct-alice",
+              "email": "alice@acme.dev",
+              "orgId": "org-acme",
+              "orgName": "Acme - Claude Team"
+            },
+            "resetCredits": {
+              "availableCount": 2,
+              "credits": [
+                { "id": "cedar-1", "usable": true, "expiresAt": "2026-10-05T10:01:00.000Z", "clears": ["anthropic:7d", "anthropic:7d:fable"], "remainingCount": 1, "status": "available" },
+                { "id": "fable-1", "usable": false, "expiresAt": "2027-01-05T10:01:00.000Z", "clears": ["anthropic:7d:fable"], "remainingCount": 2, "status": "unavailable" },
+                { "id": "spent-1", "usable": false, "expiresAt": "2026-11-05T10:01:00.000Z", "clears": ["anthropic:7d", "anthropic:7d:fable"], "remainingCount": 0, "status": "redeemed" }
+              ]
+            }
+          },
+          {
+            "provider": "anthropic",
+            "fetchedAt": 1791158459350,
+            "limits": [
+              {
+                "id": "anthropic:5h",
+                "label": "Claude 5 Hour",
+                "scope": { "provider": "anthropic", "windowId": "5h", "shared": true },
+                "window": { "id": "5h", "label": "5 Hour", "durationMs": 18000000, "resetsAt": 1791172800000 },
+                "amount": { "used": 3, "limit": 100, "remaining": 97, "usedFraction": 0.03, "remainingFraction": 0.97, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d",
+                "label": "Claude 7 Day",
+                "scope": { "provider": "anthropic", "windowId": "7d", "shared": true },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791457200000 },
+                "amount": { "used": 100, "limit": 100, "remaining": 0, "usedFraction": 1, "remainingFraction": 0, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d:fable",
+                "label": "Claude 7 Day (Fable)",
+                "scope": { "provider": "anthropic", "windowId": "7d", "tier": "fable" },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791457200000 },
+                "amount": { "used": 95, "limit": 100, "remaining": 5, "usedFraction": 0.95, "remainingFraction": 0.05, "unit": "percent" },
+                "status": "warning"
+              }
+            ],
+            "metadata": {
+              "endpoint": "https://api.anthropic.com/api/oauth/usage",
+              "accountId": "acct-bob",
+              "email": "bob@acme.dev",
+              "orgId": "org-acme",
+              "orgName": "Acme - Claude Team"
+            },
+            "resetCredits": {
+              "availableCount": 1,
+              "credits": [{ "id": "full-1", "usable": true, "expiresAt": "2026-11-01T00:00:00.000Z", "clears": ["anthropic:7d", "anthropic:7d:fable"], "remainingCount": 1, "status": "available" }]
+            }
+          }
+        ],
+        "accountsWithoutUsage": [],
+        "disabledCredentials": [
+          { "id": 3, "provider": "anthropic", "type": "oauth", "email": "carol@acme.dev", "orgId": "org-acme", "cause": "oauth refresh failed" }
+        ],
+        "capacity": {}
+      }
+    },
+    {
+      "profile": "broken",
+      "error": "omp usage printed invalid JSON"
+    },
+    {
+      "profile": "ci",
+      "usage": {
+        "generatedAt": 1791158100500,
+        "reports": [
+          {
+            "provider": "github-copilot",
+            "fetchedAt": 1791158459620,
+            "limits": [
+              {
+                "id": "github-copilot:premium",
+                "label": "Premium requests",
+                "scope": { "provider": "github-copilot", "accountId": "octocat", "tier": "pro", "windowId": "monthly" },
+                "window": { "id": "monthly", "label": "Monthly", "resetsAt": 1793491200000 },
+                "amount": { "used": 120, "limit": 300, "remaining": 180, "unit": "requests" }
+              }
+            ],
+            "metadata": { "endpoint": "https://api.github.com/copilot_internal/user" }
+          },
+          {
+            "provider": "charm-hyper",
+            "fetchedAt": 1791158100000,
+            "limits": [
+              {
+                "id": "charm-hyper:credits",
+                "label": "Credit balance",
+                "scope": { "provider": "charm-hyper", "windowId": "balance", "shared": true },
+                "amount": { "remaining": 1200, "unit": "credits" }
+              }
+            ],
+            "metadata": { "endpoint": "https://hyper.charm.land/api/v1/credits" }
+          }
+        ],
+        "accountsWithoutUsage": [],
+        "disabledCredentials": [],
+        "capacity": {}
+      },
+      "error": "omp usage timed out after 20s"
+    },
+    {
+      "profile": "gmail",
+      "usage": {
+        "generatedAt": 1791158482057,
+        "reports": [
+          {
+            "provider": "anthropic",
+            "fetchedAt": 1791158459401,
+            "limits": [
+              {
+                "id": "anthropic:5h",
+                "label": "Claude 5 Hour",
+                "scope": { "provider": "anthropic", "windowId": "5h", "shared": true },
+                "window": { "id": "5h", "label": "5 Hour", "durationMs": 18000000, "resetsAt": 1791160800327 },
+                "amount": { "used": 22, "limit": 100, "remaining": 78, "usedFraction": 0.22, "remainingFraction": 0.78, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d",
+                "label": "Claude 7 Day",
+                "scope": { "provider": "anthropic", "windowId": "7d", "shared": true },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791280800327 },
+                "amount": { "used": 78, "limit": 100, "remaining": 22, "usedFraction": 0.78, "remainingFraction": 0.22, "unit": "percent" },
+                "status": "ok"
+              },
+              {
+                "id": "anthropic:7d:fable",
+                "label": "Claude 7 Day (Fable)",
+                "scope": { "provider": "anthropic", "windowId": "7d", "tier": "fable" },
+                "window": { "id": "7d", "label": "7 Day", "durationMs": 604800000, "resetsAt": 1791280800327 },
+                "amount": { "used": 100, "limit": 100, "remaining": 0, "usedFraction": 1, "remainingFraction": 0, "unit": "percent" },
+                "status": "exhausted"
+              }
+            ],
+            "metadata": {
+              "endpoint": "https://api.anthropic.com/api/oauth/usage",
+              "accountId": "b2c4d6e8-1111-4a2b-8c3d-4e5f6a7b8c9d",
+              "email": "me@gmail.com",
+              "orgId": "b6ab11d8-2b6d-4493-8129-7b1427209dd7",
+              "orgName": "me@gmail.com's Organization"
+            },
+            "resetCredits": { "availableCount": 0, "redeemableCount": 0, "eligible": false, "reason": "not_at_wall", "credits": [] }
+          },
+          {
+            "provider": "github-copilot",
+            "fetchedAt": 1791158459620,
+            "limits": [
+              {
+                "id": "github-copilot:premium",
+                "label": "Premium requests",
+                "scope": { "provider": "github-copilot", "accountId": "octocat", "tier": "pro", "windowId": "monthly" },
+                "window": { "id": "monthly", "label": "Monthly", "resetsAt": 1793491200000 },
+                "amount": { "used": 120, "limit": 300, "remaining": 180, "unit": "requests" }
+              }
+            ],
+            "metadata": { "endpoint": "https://api.github.com/copilot_internal/user" }
+          }
+        ],
+        "accountsWithoutUsage": [],
+        "disabledCredentials": [],
+        "capacity": {}
+      }
+    }
+  ],
+  "paseoUsage": {
+    "requestId": "fixture",
+    "fetchedAt": "2026-10-05T00:00:30.000Z",
+    "providers": [
+      { "providerId": "claude", "displayName": "Claude (me@gmail.com)", "status": "available", "planLabel": null, "windows": [{ "id": "weekly", "label": "Weekly", "shortLabel": "wk", "summary": true, "usedPct": 77, "remainingPct": 23, "resetsAt": "2026-10-08T00:01:00.000Z", "tone": "warning" }], "balances": [], "details": [], "error": null },
+      { "providerId": "claude", "displayName": "Claude (carol@acme.dev)", "status": "available", "planLabel": null, "windows": [{ "id": "five_hour", "label": "Session", "shortLabel": "5h", "summary": true, "usedPct": 12, "remainingPct": 88, "resetsAt": "2026-10-05T01:01:00.000Z", "durationSeconds": 18000, "tone": "ok" },{ "id": "weekly", "label": "Weekly", "shortLabel": "wk", "summary": true, "usedPct": 41, "remainingPct": 59, "resetsAt": "2026-10-09T00:01:00.000Z", "durationSeconds": 604800, "tone": "ok" },{ "id": "weekly_model_fable", "label": "Weekly · Fable", "shortLabel": "wk Fable", "usedPct": 8, "remainingPct": 92, "resetsAt": "2026-10-09T00:01:00.000Z", "durationSeconds": 604800, "tone": "ok" }], "balances": [], "details": [], "error": null },
+      { "providerId": "claude", "displayName": "Claude (solo@claude.dev)", "status": "available", "planLabel": "max_20x", "windows": [{ "id": "five_hour", "label": "Session", "shortLabel": "5h", "summary": true, "usedPct": 100, "remainingPct": 0, "resetsAt": "2026-10-05T00:31:00.000Z", "durationSeconds": 18000, "tone": "danger" },{ "id": "weekly", "label": "Weekly", "shortLabel": "wk", "summary": true, "usedPct": 52, "remainingPct": 48, "resetsAt": "2026-10-10T00:01:00.000Z", "durationSeconds": 604800, "tone": "ok" }], "balances": [], "details": [], "error": null },
+      { "providerId": "codex", "displayName": "Codex (dev@acme.dev)", "status": "available", "planLabel": null, "windows": [{ "id": "weekly", "label": "Weekly", "shortLabel": "wk", "summary": true, "usedPct": 25, "remainingPct": 75, "resetsAt": "2026-10-11T00:01:00.000Z", "tone": "ok" }], "balances": [], "details": [], "error": null },
+      { "providerId": "copilot", "displayName": "GitHub Copilot", "status": "available", "planLabel": null, "windows": [], "balances": [], "details": [], "error": null },
+      { "providerId": "cursor", "displayName": "Cursor (pat@cursor.dev)", "status": "available", "planLabel": null, "windows": [], "balances": [{ "id": "included", "label": "Included usage", "used": 14.5, "limit": 20, "unit": "usd", "resetsAt": "2026-10-17T00:01:00.000Z" }], "details": [], "error": null },
+      { "providerId": "kimi", "displayName": "Kimi (kim@moonshot.dev)", "status": "error", "planLabel": null, "windows": [], "balances": [], "details": [], "error": "Kimi rejected the saved API key" },
+      { "providerId": "omp-anthropic", "displayName": "Claude (omp) (me@gmail.com)", "status": "available", "planLabel": null, "windows": [{ "id": "7d", "label": "Claude 7 Day", "shortLabel": "7d", "summary": true, "usedPct": 78, "remainingPct": 22, "resetsAt": "2026-10-06T00:01:00.000Z", "tone": "warning" }], "balances": [], "details": [], "error": null }
+    ]
+  },
+  "pins": {
+    "default": {
+      "session:sticky:openai-codex:01a0ddec-667f-7132-ba5b-22950df1dd45": "email:dev@acme.dev|org:0e9a7b6c-1d2e-4f30-8a41-5b6c7d8e9f01"
+    },
+    "acme": {
+      "session:sticky:anthropic:01a0fe23-83d0-71f2-9aed-b08572e84bd5": "email:Bob@acme.dev|org:org-acme",
+      "session:sticky:anthropic:01a0ff27-eb77-7793-b61e-21638d57f0b7": "email:carol@acme.dev|org:org-acme"
+    }
+  },
+  "providers": {
+    "opencode": { "enabled": false },
+    "gemini": { "extends": "acp", "label": "Gemini CLI", "command": ["npx", "-y", "@google/gemini-cli", "--acp"], "env": {} },
+    "omp": { "enabled": true },
+    "omp-acme": {
+      "extends": "omp",
+      "label": "alice@acme.dev",
+      "env": { "OMP_PROFILE": "acme" },
+      "params": { "sessionDir": "/home/me/.omp/profiles/acme/agent/sessions" },
+      "enabled": true
+    },
+    "omp-gmail": {
+      "extends": "omp",
+      "label": "me@gmail.com",
+      "env": { "OMP_PROFILE": "gmail" },
+      "params": { "sessionDir": "/home/me/.omp/profiles/gmail/agent/sessions" },
+      "enabled": true
+    },
+    "claude": { "enabled": true }
+  },
+  "env": {},
+  "agents": [
+    { "agentId": "gmail-opus", "provider": "omp-gmail", "model": "anthropic/claude-opus-5-5", "sessionId": "01a0fd51-d198-75b7-a3de-4740746512e5" },
+    { "agentId": "acme-pinned-fable", "provider": "omp-acme", "model": "anthropic/claude-fable-5-1", "sessionId": "01a0fe23-83d0-71f2-9aed-b08572e84bd5" },
+    { "agentId": "acme-unpinned", "provider": "omp-acme", "model": "anthropic/claude-opus-5-5", "sessionId": "01a0fe48-e477-72a4-9e03-ed678d0d0efa" },
+    { "agentId": "acme-pinned-to-disabled", "provider": "omp-acme", "model": "anthropic/claude-opus-5-5", "sessionId": "01a0ff27-eb77-7793-b61e-21638d57f0b7" },
+    { "agentId": "default-codex", "provider": "omp", "model": "openai-codex/gpt-6-codex", "sessionId": "01a0ddec-667f-7132-ba5b-22950df1dd45" },
+    { "agentId": "native-claude", "provider": "claude", "model": "claude-opus-5-5", "sessionId": "5f0c7e2a-9b1d-4c3e-8a7f-6d5e4c3b2a19" }
+  ],
+  "scopes": {
+    "global": { "kind": "global" },
+    "omp Claude session": { "kind": "session", "provider": "omp", "model": "anthropic/claude-opus-5-5", "env": { "OMP_PROFILE": "acme" } },
+    "omp Codex session": { "kind": "session", "provider": "omp", "model": "openai-codex/gpt-6-codex", "env": {} },
+    "Claude Code session": { "kind": "session", "provider": "claude", "model": "claude-opus-5-5", "env": {} }
+  }
+}

@@ -1,0 +1,4 @@
+# Shared with oxfmt, which formats Markdown; rumdl only lints it.
+[global]
+# Line length: prose wraps in the editor, and tables and links cannot wrap.
+disable = ["MD013"]

@@ -1,0 +1,721 @@
+{
+  "view": {
+    "sections": [
+      {
+        "id": "merge",
+        "title": "Ready to merge",
+        "rows": [
+          {
+            "key": "wks_02",
+            "title": "pin-aws-profile",
+            "subtitle": "approved · #102",
+            "approval": "ready",
+            "workspaceId": "wks_02",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/102"
+          },
+          {
+            "key": "wks_04",
+            "title": "split-parser",
+            "subtitle": "↑#105 · #104",
+            "approval": null,
+            "workspaceId": "wks_04",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/104"
+          },
+          {
+            "key": "wks_09",
+            "title": "native-2",
+            "subtitle": "approved · lands ↓#108 · #109",
+            "approval": "ready",
+            "workspaceId": "wks_09",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/109"
+          },
+          {
+            "key": "wks_12",
+            "title": "pin-aws-profile-2",
+            "subtitle": "approved · #102",
+            "approval": "ready",
+            "workspaceId": "wks_12",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/102"
+          },
+          {
+            "key": "wks_29",
+            "title": "release-fix",
+            "subtitle": "approved · #119",
+            "approval": "ready",
+            "workspaceId": "wks_29",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/119"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "approved",
+        "title": "Approved, can't merge yet",
+        "rows": [
+          {
+            "key": "wks_03",
+            "title": "rename-queue",
+            "subtitle": "has merge conflicts · #103",
+            "approval": "approved",
+            "workspaceId": "wks_03",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/103"
+          },
+          {
+            "key": "wks_05",
+            "title": "lazy-headers",
+            "subtitle": "↓#104 · #105",
+            "approval": "approved",
+            "workspaceId": "wks_05",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/105"
+          },
+          {
+            "key": "wks_06",
+            "title": "cache-headers",
+            "subtitle": "↓#90 was merged; pick a new base branch · #106",
+            "approval": "approved",
+            "workspaceId": "wks_06",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/106"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "respond",
+        "title": "Respond",
+        "rows": [
+          {
+            "key": "wks_01",
+            "title": "retry-uploads",
+            "subtitle": "1 open thread · 1 new review · 1 new comment · #101",
+            "approval": null,
+            "workspaceId": "wks_01",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/101"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/607",
+            "title": "Yours in no workspace, new comment",
+            "subtitle": "1 new comment · app#607",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 607
+              },
+              "title": "#607 Yours in no workspace, new comment"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/607"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "checks",
+        "title": "Fix checks",
+        "rows": [
+          {
+            "key": "https://github.com/acme/app/pull/601",
+            "title": "Checks failing, nobody asked to review",
+            "subtitle": "checks failing · app#601",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 601
+              },
+              "title": "#601 Checks failing, nobody asked to review"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/601"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "stuck",
+        "title": "Stuck",
+        "rows": [
+          {
+            "key": "wks_16",
+            "title": "behind",
+            "subtitle": "no reviewer asked for 5d · #115",
+            "approval": null,
+            "workspaceId": "wks_16",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/115"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/602",
+            "title": "Only Copilot reviews it, conflicts",
+            "subtitle": "not in Paseo · no reviewer asked for 5d · app#602",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 602
+              },
+              "title": "#602 Only Copilot reviews it, conflicts"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/602"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/603",
+            "title": "Reviewer asked, in no workspace",
+            "subtitle": "not in Paseo · app#603",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 603
+              },
+              "title": "#603 Reviewer asked, in no workspace"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/603"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/604",
+            "title": "Draft with conflicts",
+            "subtitle": "not in Paseo · draft · app#604",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 604
+              },
+              "title": "#604 Draft with conflicts"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/604"
+          },
+          {
+            "key": "https://github.com/other/lib/pull/7",
+            "title": "Approved where you cannot merge",
+            "subtitle": "not in Paseo · lib#7",
+            "approval": "ready",
+            "workspaceId": null,
+            "checkOut": null,
+            "repository": "other/lib",
+            "url": "https://github.com/other/lib/pull/7"
+          },
+          {
+            "key": "https://github.com/other/lib/pull/8",
+            "title": "Clean where you cannot merge",
+            "subtitle": "not in Paseo · no reviewer asked for 5d · lib#8",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": null,
+            "repository": "other/lib",
+            "url": "https://github.com/other/lib/pull/8"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/608",
+            "title": "Reviewed, you replied",
+            "subtitle": "not in Paseo · app#608",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 608
+              },
+              "title": "#608 Reviewed, you replied"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/608"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "rereview",
+        "title": "Re-review",
+        "rows": [
+          {
+            "key": "wks_07",
+            "title": "review-exports",
+            "subtitle": "new commits · 1 reply · by alice · #107",
+            "approval": null,
+            "workspaceId": "wks_07",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/107"
+          },
+          {
+            "key": "wks_24",
+            "title": "review-205",
+            "subtitle": "new commits · asked again · by judy · #205",
+            "approval": null,
+            "workspaceId": "wks_24",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/205"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "review",
+        "title": "Review",
+        "rows": [
+          {
+            "key": "https://github.com/acme/app/pull/201",
+            "title": "Add an audit log",
+            "subtitle": "waiting 7d · by carol · app#201",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 201
+              },
+              "title": "#201 Add an audit log"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/201"
+          },
+          {
+            "key": "wks_23",
+            "title": "review-204",
+            "subtitle": "waiting 5d · by heidi · #204",
+            "approval": null,
+            "workspaceId": "wks_23",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/204"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/210",
+            "title": "Stacked: add the models",
+            "subtitle": "waiting 5d · ↑#211 · by frank · app#210",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 210
+              },
+              "title": "#210 Stacked: add the models"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/210"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/211",
+            "title": "Stacked: wire the API",
+            "subtitle": "waiting 5d · ↓#210 · by frank · app#211",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 211
+              },
+              "title": "#211 Stacked: wire the API"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/211"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/207",
+            "title": "From a fork's main: no workspace on main holds it",
+            "subtitle": "waiting 3d · by kim · app#207",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 207
+              },
+              "title": "#207 From a fork's main: no workspace on main holds it"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/207"
+          },
+          {
+            "key": "wks_26",
+            "title": "review-206",
+            "subtitle": "waiting 2d · by ivan · #206",
+            "approval": null,
+            "workspaceId": "wks_26",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/206"
+          },
+          {
+            "key": "wks_11",
+            "title": "review-thumbnails",
+            "subtitle": "waiting 1d · by alice · #111",
+            "approval": null,
+            "workspaceId": "wks_11",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/111"
+          },
+          {
+            "key": "https://github.com/acme/docs/pull/401",
+            "title": "No Paseo project clones its repository",
+            "subtitle": "waiting 6h · by liam · docs#401",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": null,
+            "repository": "acme/docs",
+            "url": "https://github.com/acme/docs/pull/401"
+          },
+          {
+            "key": "https://github.com/acme/api/pull/301",
+            "title": "Rate-limit webhooks",
+            "subtitle": "waiting 45m · by grace · api#301",
+            "approval": null,
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "api",
+                "number": 301
+              },
+              "title": "#301 Rate-limit webhooks"
+            },
+            "repository": "acme/api",
+            "url": "https://github.com/acme/api/pull/301"
+          }
+        ],
+        "folded": {
+          "title": "3 bot updates",
+          "rows": [
+            {
+              "key": "https://github.com/acme/app/pull/220",
+              "title": "Bump zod: a bot's update, folded",
+              "subtitle": "waiting 14d · by dependabot · app#220",
+              "approval": null,
+              "workspaceId": null,
+              "checkOut": {
+                "pullRequest": {
+                  "owner": "acme",
+                  "repo": "app",
+                  "number": 220
+                },
+                "title": "#220 Bump zod: a bot's update, folded"
+              },
+              "repository": "acme/app",
+              "url": "https://github.com/acme/app/pull/220"
+            },
+            {
+              "key": "https://github.com/acme/app/pull/221",
+              "title": "Bump vitest: folded with the other bot updates",
+              "subtitle": "waiting 10d · by dependabot · app#221",
+              "approval": null,
+              "workspaceId": null,
+              "checkOut": {
+                "pullRequest": {
+                  "owner": "acme",
+                  "repo": "app",
+                  "number": 221
+                },
+                "title": "#221 Bump vitest: folded with the other bot updates"
+              },
+              "repository": "acme/app",
+              "url": "https://github.com/acme/app/pull/221"
+            },
+            {
+              "key": "https://github.com/acme/app/pull/222",
+              "title": "Bump biome: folded, oldest first",
+              "subtitle": "waiting 16h · by dependabot · app#222",
+              "approval": null,
+              "workspaceId": null,
+              "checkOut": {
+                "pullRequest": {
+                  "owner": "acme",
+                  "repo": "app",
+                  "number": 222
+                },
+                "title": "#222 Bump biome: folded, oldest first"
+              },
+              "repository": "acme/app",
+              "url": "https://github.com/acme/app/pull/222"
+            }
+          ]
+        }
+      },
+      {
+        "id": "optional",
+        "title": "Approved without you",
+        "rows": [
+          {
+            "key": "https://github.com/acme/app/pull/202",
+            "title": "Bump the SDK",
+            "subtitle": "waiting 8d · by dave · app#202",
+            "approval": "ready",
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 202
+              },
+              "title": "#202 Bump the SDK"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/202"
+          },
+          {
+            "key": "https://github.com/acme/app/pull/203",
+            "title": "Tidy the CLI flags",
+            "subtitle": "new commits · asked again · by erin · app#203",
+            "approval": "approved",
+            "workspaceId": null,
+            "checkOut": {
+              "pullRequest": {
+                "owner": "acme",
+                "repo": "app",
+                "number": 203
+              },
+              "title": "#203 Tidy the CLI flags"
+            },
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/203"
+          }
+        ],
+        "folded": null
+      },
+      {
+        "id": "waiting",
+        "title": "Waiting on others",
+        "rows": [
+          {
+            "key": "wks_08",
+            "title": "native-1",
+            "subtitle": "approved · ↑#109 · #108",
+            "approval": "approved",
+            "workspaceId": "wks_08",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/108"
+          },
+          {
+            "key": "wks_13",
+            "title": "waiting",
+            "subtitle": "waiting 5d · #112",
+            "approval": null,
+            "workspaceId": "wks_13",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/112"
+          },
+          {
+            "key": "wks_14",
+            "title": "draft",
+            "subtitle": "draft · #113",
+            "approval": null,
+            "workspaceId": "wks_14",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/113"
+          },
+          {
+            "key": "wks_15",
+            "title": "checks",
+            "subtitle": "waiting 5d · #114",
+            "approval": null,
+            "workspaceId": "wks_15",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/114"
+          },
+          {
+            "key": "wks_30",
+            "title": "review-bobs",
+            "subtitle": "you approved · by bob · #120",
+            "approval": "ready",
+            "workspaceId": "wks_30",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/120"
+          },
+          {
+            "key": "wks_31",
+            "title": "checked-out-then-moved",
+            "subtitle": "waiting 5d · #112",
+            "approval": null,
+            "workspaceId": "wks_31",
+            "checkOut": null,
+            "repository": "acme/app",
+            "url": "https://github.com/acme/app/pull/112"
+          }
+        ],
+        "folded": null
+      }
+    ],
+    "badges": {
+      "wks_02": {
+        "label": "merge",
+        "tone": "success",
+        "section": "merge",
+        "detail": "approved · #102"
+      },
+      "wks_04": {
+        "label": "merge",
+        "tone": "success",
+        "section": "merge",
+        "detail": "↑#105 · #104"
+      },
+      "wks_09": {
+        "label": "merge",
+        "tone": "success",
+        "section": "merge",
+        "detail": "approved · lands ↓#108 · #109"
+      },
+      "wks_12": {
+        "label": "merge",
+        "tone": "success",
+        "section": "merge",
+        "detail": "approved · #102"
+      },
+      "wks_29": {
+        "label": "merge",
+        "tone": "success",
+        "section": "merge",
+        "detail": "approved · #119"
+      },
+      "wks_03": {
+        "label": "approved",
+        "tone": "warning",
+        "section": "approved",
+        "detail": "has merge conflicts · #103"
+      },
+      "wks_05": {
+        "label": "approved",
+        "tone": "warning",
+        "section": "approved",
+        "detail": "↓#104 · #105"
+      },
+      "wks_06": {
+        "label": "approved",
+        "tone": "warning",
+        "section": "approved",
+        "detail": "↓#90 was merged; pick a new base branch · #106"
+      },
+      "wks_01": {
+        "label": "reply",
+        "tone": "danger",
+        "section": "respond",
+        "detail": "1 open thread · 1 new review · 1 new comment · #101"
+      },
+      "wks_16": {
+        "label": "no reviewer",
+        "tone": "warning",
+        "section": "stuck",
+        "detail": "no reviewer asked for 5d · #115"
+      },
+      "wks_07": {
+        "label": "re-review",
+        "tone": "info",
+        "section": "rereview",
+        "detail": "new commits · 1 reply · by alice · #107"
+      },
+      "wks_24": {
+        "label": "re-review",
+        "tone": "info",
+        "section": "rereview",
+        "detail": "new commits · asked again · by judy · #205"
+      },
+      "wks_23": {
+        "label": "review",
+        "tone": "info",
+        "section": "review",
+        "detail": "waiting 5d · by heidi · #204"
+      },
+      "wks_26": {
+        "label": "review",
+        "tone": "info",
+        "section": "review",
+        "detail": "waiting 2d · by ivan · #206"
+      },
+      "wks_11": {
+        "label": "review",
+        "tone": "info",
+        "section": "review",
+        "detail": "waiting 1d · by alice · #111"
+      },
+      "wks_08": {
+        "label": "approved",
+        "tone": "muted",
+        "section": "waiting",
+        "detail": "approved · ↑#109 · #108"
+      },
+      "wks_13": {
+        "label": "waiting 5d",
+        "tone": "muted",
+        "section": "waiting",
+        "detail": "waiting 5d · #112"
+      },
+      "wks_14": {
+        "label": "draft",
+        "tone": "muted",
+        "section": "waiting",
+        "detail": "draft · #113"
+      },
+      "wks_15": {
+        "label": "waiting 5d",
+        "tone": "muted",
+        "section": "waiting",
+        "detail": "waiting 5d · #114"
+      },
+      "wks_30": {
+        "label": "you approved",
+        "tone": "muted",
+        "section": "waiting",
+        "detail": "you approved · by bob · #120"
+      },
+      "wks_31": {
+        "label": "waiting 5d",
+        "tone": "muted",
+        "section": "waiting",
+        "detail": "waiting 5d · #112"
+      }
+    },
+    "summary": "32 pull requests need you · 2 approved without you · 6 waiting on others · 23 workspaces with a pull request · Paseo is still reading 1 workspace",
+    "needing": 32,
+    "ready": 5,
+    "error": {
+      "message": "Couldn't load some review requests and some of your workspaces' pull requests. Trying again in a few minutes.",
+      "detail": "Workspace pull requests: Could not resolve to a PullRequest with the number of 116.; Review requests: gh: unexpected end of JSON input"
+    }
+  },
+  "readSoon": true
+}

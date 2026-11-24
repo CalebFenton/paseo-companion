@@ -1,0 +1,1115 @@
+{
+  "view": {
+    "accounts": [
+      {
+        "id": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
+        "provider": "openai-codex",
+        "label": "dev@acme.dev",
+        "organization": null,
+        "plan": "self serve business prolite",
+        "profiles": [
+          "default"
+        ],
+        "fetchedAt": 1791158459191,
+        "problem": null,
+        "title": "Codex · dev@acme.dev",
+        "heading": "Codex",
+        "windows": [
+          {
+            "id": "openai-codex:primary",
+            "label": "7 days",
+            "shortLabel": "7d",
+            "usedPct": 26,
+            "tone": "ok",
+            "resetsAt": 1791226860000,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "unused",
+            "weekly": true,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [
+          {
+            "scope": "full",
+            "count": 2,
+            "usable": 1,
+            "expiresAt": 1792701393456,
+            "tone": "ok"
+          }
+        ],
+        "redeem": null,
+        "tone": "ok",
+        "accent": true,
+        "fullestWeekly": "openai-codex:primary",
+        "usedPct": 26
+      },
+      {
+        "id": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605",
+        "provider": "anthropic",
+        "label": "me@gmail.com",
+        "organization": null,
+        "plan": null,
+        "profiles": [
+          "default",
+          "gmail"
+        ],
+        "fetchedAt": 1791158459401,
+        "problem": null,
+        "title": "Claude · me@gmail.com",
+        "heading": "Claude",
+        "windows": [
+          {
+            "id": "anthropic:5h",
+            "label": "Claude 5 Hour",
+            "shortLabel": "5h",
+            "usedPct": 22,
+            "tone": "ok",
+            "resetsAt": 1791160800327,
+            "durationMs": 18000000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": false,
+            "stopsNow": false
+          },
+          {
+            "id": "anthropic:7d",
+            "label": "Claude 7 Day",
+            "shortLabel": "7d",
+            "usedPct": 78,
+            "tone": "warning",
+            "resetsAt": 1791280800327,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": true,
+            "stopsNow": false
+          },
+          {
+            "id": "anthropic:7d:fable",
+            "label": "Claude 7 Day (Fable)",
+            "shortLabel": "fable",
+            "usedPct": 100,
+            "tone": "danger",
+            "resetsAt": 1791280800327,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "reached",
+            "weekly": false,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "warning",
+        "accent": false,
+        "fullestWeekly": "anthropic:7d",
+        "usedPct": 78
+      },
+      {
+        "id": "63d978e0d14537f54c0b9fc31ca4b243e01ee5d2f0073baaca8f74984daf40d3",
+        "provider": "xai-oauth",
+        "label": "me@example.org",
+        "organization": null,
+        "plan": null,
+        "profiles": [
+          "default"
+        ],
+        "fetchedAt": 1791158459911,
+        "problem": null,
+        "title": "Grok · me@example.org",
+        "heading": "Grok",
+        "windows": [
+          {
+            "id": "xai-oauth:credits:1w",
+            "label": "SuperGrok Weekly Credits",
+            "shortLabel": "7d",
+            "usedPct": 4,
+            "tone": "ok",
+            "resetsAt": 1791476659457,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": true,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "ok",
+        "accent": false,
+        "fullestWeekly": "xai-oauth:credits:1w",
+        "usedPct": 4
+      },
+      {
+        "id": "d545bb5b92485dce4cfd9a2122f865a9ae25d6042eedf883df0179cf3d42429d",
+        "provider": "anthropic",
+        "label": "carol@acme.dev",
+        "organization": null,
+        "plan": null,
+        "profiles": [
+          "acme"
+        ],
+        "fetchedAt": 1791158460000,
+        "problem": null,
+        "title": "Claude · carol@acme.dev",
+        "heading": "Claude",
+        "windows": [
+          {
+            "id": "five_hour",
+            "label": "Session",
+            "shortLabel": "5h",
+            "usedPct": 12,
+            "tone": "ok",
+            "resetsAt": 1791162060000,
+            "durationMs": 18000000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": false,
+            "stopsNow": false
+          },
+          {
+            "id": "weekly",
+            "label": "Weekly",
+            "shortLabel": "wk",
+            "usedPct": 41,
+            "tone": "ok",
+            "resetsAt": 1791504060000,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": true,
+            "stopsNow": false
+          },
+          {
+            "id": "weekly_model_fable",
+            "label": "Weekly · Fable",
+            "shortLabel": "wk Fable",
+            "usedPct": 8,
+            "tone": "ok",
+            "resetsAt": 1791504060000,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": false,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "ok",
+        "accent": false,
+        "fullestWeekly": "weekly",
+        "usedPct": 41
+      },
+      {
+        "id": "68e2a4b10ac1def0d9d8ab41b1b6985e1951657a2a31cb124cb91d0cd3756724",
+        "provider": "github-copilot",
+        "label": "octocat",
+        "organization": null,
+        "plan": null,
+        "profiles": [
+          "ci",
+          "gmail"
+        ],
+        "fetchedAt": 1791158459620,
+        "problem": null,
+        "title": "Copilot · octocat",
+        "heading": "Copilot",
+        "windows": [
+          {
+            "id": "github-copilot:premium",
+            "label": "Premium requests",
+            "shortLabel": "monthly",
+            "usedPct": 40,
+            "tone": "ok",
+            "resetsAt": 1793491200000,
+            "durationMs": null,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": true,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "ok",
+        "accent": false,
+        "fullestWeekly": "github-copilot:premium",
+        "usedPct": 40
+      },
+      {
+        "id": "292822602729eebb55496e7f4b540eadb0631d52506b15799a5f51412c59ca58",
+        "provider": "charm-hyper",
+        "label": "ci",
+        "organization": null,
+        "plan": null,
+        "profiles": [
+          "ci"
+        ],
+        "fetchedAt": 1791158100000,
+        "problem": null,
+        "title": "Charm Hyper · ci",
+        "heading": "Charm Hyper",
+        "windows": [],
+        "balances": [
+          {
+            "id": "charm-hyper:credits",
+            "label": "Credit balance",
+            "usedPct": null,
+            "tone": "ok",
+            "resetsAt": null,
+            "unit": "credits",
+            "used": null,
+            "limit": null,
+            "remaining": 1200,
+            "text": "1,200 credits left"
+          }
+        ],
+        "resets": [],
+        "redeem": null,
+        "tone": "ok",
+        "accent": false,
+        "fullestWeekly": null,
+        "usedPct": null
+      },
+      {
+        "id": "1f301fe408d67619d84970214c01c1ecdeace6186a178b23dbaf69d39240880f",
+        "provider": "cursor",
+        "label": "pat@cursor.dev",
+        "organization": null,
+        "plan": null,
+        "profiles": [],
+        "fetchedAt": 1791158460000,
+        "problem": null,
+        "title": "Cursor · pat@cursor.dev",
+        "heading": "Cursor",
+        "windows": [],
+        "balances": [
+          {
+            "id": "included",
+            "label": "Included usage",
+            "usedPct": 72.5,
+            "tone": "warning",
+            "resetsAt": 1792195260000,
+            "unit": "usd",
+            "used": 14.5,
+            "limit": 20,
+            "remaining": null,
+            "text": "$14.50 of $20.00"
+          }
+        ],
+        "resets": [],
+        "redeem": null,
+        "tone": "warning",
+        "accent": false,
+        "fullestWeekly": null,
+        "usedPct": 72.5
+      },
+      {
+        "id": "eb02c6a3a66ba80828f645eec1629674d69bc936fb5ce40b549f6b94b4f8b030",
+        "provider": "anthropic",
+        "label": "alice@acme.dev",
+        "organization": "Acme - Claude Team",
+        "plan": null,
+        "profiles": [
+          "acme"
+        ],
+        "fetchedAt": 1791158459300,
+        "problem": null,
+        "title": "Claude · alice@acme.dev",
+        "heading": "Claude · Acme - Claude Team",
+        "windows": [
+          {
+            "id": "anthropic:5h",
+            "label": "Claude 5 Hour",
+            "shortLabel": "5h",
+            "usedPct": 45,
+            "tone": "ok",
+            "resetsAt": 1791167400000,
+            "durationMs": 18000000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": false,
+            "stopsNow": false
+          },
+          {
+            "id": "anthropic:7d",
+            "label": "Claude 7 Day",
+            "shortLabel": "7d",
+            "usedPct": 93,
+            "tone": "danger",
+            "resetsAt": 1791370800000,
+            "durationMs": 604800000,
+            "runsOutAt": 1791187999247,
+            "outlook": "runsOut",
+            "weekly": true,
+            "stopsNow": false
+          },
+          {
+            "id": "anthropic:7d:fable",
+            "label": "Claude 7 Day (Fable)",
+            "shortLabel": "fable",
+            "usedPct": 12,
+            "tone": "ok",
+            "resetsAt": 1791370800000,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": false,
+            "stopsNow": false
+          }
+        ],
+        "balances": [
+          {
+            "id": "anthropic:extra",
+            "label": "Claude Extra Usage",
+            "usedPct": 14.994,
+            "tone": "ok",
+            "resetsAt": null,
+            "unit": "usd",
+            "used": 74.97,
+            "limit": 500,
+            "remaining": 425.03,
+            "text": "$74.97 of $500.00"
+          }
+        ],
+        "resets": [
+          {
+            "scope": "full",
+            "count": 1,
+            "usable": 1,
+            "expiresAt": 1791194460000,
+            "tone": "warning"
+          },
+          {
+            "scope": "fable",
+            "count": 2,
+            "usable": 0,
+            "expiresAt": 1799143260000,
+            "tone": "ok"
+          }
+        ],
+        "redeem": null,
+        "tone": "danger",
+        "accent": false,
+        "fullestWeekly": "anthropic:7d",
+        "usedPct": 93
+      },
+      {
+        "id": "44d7684767f26012e5fd4e9ccd31b19b6e36f714f83b485a9ba8e11d0e76e29e",
+        "provider": "claude",
+        "label": "solo@claude.dev",
+        "organization": null,
+        "plan": "max 20x",
+        "profiles": [],
+        "fetchedAt": 1791158460000,
+        "problem": null,
+        "title": "Claude · solo@claude.dev",
+        "heading": "Claude",
+        "windows": [
+          {
+            "id": "five_hour",
+            "label": "Session",
+            "shortLabel": "5h",
+            "usedPct": 100,
+            "tone": "danger",
+            "resetsAt": 1791160260000,
+            "durationMs": 18000000,
+            "runsOutAt": null,
+            "outlook": "reached",
+            "weekly": false,
+            "stopsNow": true
+          },
+          {
+            "id": "weekly",
+            "label": "Weekly",
+            "shortLabel": "wk",
+            "usedPct": 52,
+            "tone": "ok",
+            "resetsAt": 1791590460000,
+            "durationMs": 604800000,
+            "runsOutAt": 1791317967692,
+            "outlook": "runsOut",
+            "weekly": true,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "danger",
+        "accent": false,
+        "fullestWeekly": "weekly",
+        "usedPct": 52
+      },
+      {
+        "id": "d3dd8916c91a5bf8423e0a0ba6be544f205a8e1f5894315d278fe3a136204be7",
+        "provider": "anthropic",
+        "label": "bob@acme.dev",
+        "organization": "Acme - Claude Team",
+        "plan": null,
+        "profiles": [
+          "acme"
+        ],
+        "fetchedAt": 1791158459350,
+        "problem": null,
+        "title": "Claude · bob@acme.dev",
+        "heading": "Claude · Acme - Claude Team",
+        "windows": [
+          {
+            "id": "anthropic:5h",
+            "label": "Claude 5 Hour",
+            "shortLabel": "5h",
+            "usedPct": 3,
+            "tone": "ok",
+            "resetsAt": 1791172800000,
+            "durationMs": 18000000,
+            "runsOutAt": null,
+            "outlook": "onTrack",
+            "weekly": false,
+            "stopsNow": false
+          },
+          {
+            "id": "anthropic:7d",
+            "label": "Claude 7 Day",
+            "shortLabel": "7d",
+            "usedPct": 100,
+            "tone": "danger",
+            "resetsAt": 1791457200000,
+            "durationMs": 604800000,
+            "runsOutAt": null,
+            "outlook": "reached",
+            "weekly": true,
+            "stopsNow": false
+          },
+          {
+            "id": "anthropic:7d:fable",
+            "label": "Claude 7 Day (Fable)",
+            "shortLabel": "fable",
+            "usedPct": 95,
+            "tone": "danger",
+            "resetsAt": 1791457200000,
+            "durationMs": 604800000,
+            "runsOutAt": 1791174567737,
+            "outlook": "runsOut",
+            "weekly": false,
+            "stopsNow": false
+          }
+        ],
+        "balances": [],
+        "resets": [
+          {
+            "scope": "full",
+            "count": 1,
+            "usable": 1,
+            "expiresAt": 1793491200000,
+            "tone": "ok"
+          }
+        ],
+        "redeem": {
+          "backAt": 1791457200000
+        },
+        "tone": "danger",
+        "accent": false,
+        "fullestWeekly": "anthropic:7d",
+        "usedPct": 100
+      },
+      {
+        "id": "8f08f6dae32df2fb72586f820f77eb19eaeff5bf1c1d90e51e9368c24fd045bc",
+        "provider": "google-gemini-cli",
+        "label": "gemini-proj-7",
+        "organization": null,
+        "plan": null,
+        "profiles": [
+          "default"
+        ],
+        "fetchedAt": null,
+        "problem": "omp has no usage report for this login.",
+        "title": "Gemini · gemini-proj-7",
+        "heading": "Gemini",
+        "windows": [],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "warning",
+        "accent": false,
+        "fullestWeekly": null,
+        "usedPct": null
+      },
+      {
+        "id": "42ad9d7f6b174bc8c80cf7703b2fde926a5421450facf5f45e850ccc1b5faf28",
+        "provider": "kimi",
+        "label": "kim@moonshot.dev",
+        "organization": null,
+        "plan": null,
+        "profiles": [],
+        "fetchedAt": null,
+        "problem": "Kimi rejected the saved API key",
+        "title": "Kimi · kim@moonshot.dev",
+        "heading": "Kimi",
+        "windows": [],
+        "balances": [],
+        "resets": [],
+        "redeem": null,
+        "tone": "warning",
+        "accent": false,
+        "fullestWeekly": null,
+        "usedPct": null
+      }
+    ],
+    "overview": {
+      "text": "Codex: 74% expires in 19h",
+      "tone": "ok",
+      "accent": true
+    },
+    "pills": {
+      "gmail-opus": {
+        "accountId": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605",
+        "text": "me@gmail 78%",
+        "tone": "warning",
+        "accent": false,
+        "others": [
+          {
+            "accountId": "d545bb5b92485dce4cfd9a2122f865a9ae25d6042eedf883df0179cf3d42429d",
+            "text": "wk 41%",
+            "tone": "ok",
+            "accent": false
+          },
+          {
+            "accountId": "eb02c6a3a66ba80828f645eec1629674d69bc936fb5ce40b549f6b94b4f8b030",
+            "text": "7d 93% ↑",
+            "tone": "danger",
+            "accent": false
+          }
+        ]
+      },
+      "acme-pinned-fable": {
+        "accountId": "d3dd8916c91a5bf8423e0a0ba6be544f205a8e1f5894315d278fe3a136204be7",
+        "text": "bob full, back 3d 10h",
+        "tone": "danger",
+        "accent": false,
+        "others": [
+          {
+            "accountId": "d545bb5b92485dce4cfd9a2122f865a9ae25d6042eedf883df0179cf3d42429d",
+            "text": "wk 41%",
+            "tone": "ok",
+            "accent": false
+          },
+          {
+            "accountId": "eb02c6a3a66ba80828f645eec1629674d69bc936fb5ce40b549f6b94b4f8b030",
+            "text": "7d 93% ↑",
+            "tone": "danger",
+            "accent": false
+          }
+        ]
+      },
+      "default-codex": {
+        "accountId": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
+        "text": "dev 26% ↓ 19h",
+        "tone": "ok",
+        "accent": true,
+        "others": []
+      },
+      "native-claude": {
+        "accountId": "44d7684767f26012e5fd4e9ccd31b19b6e36f714f83b485a9ba8e11d0e76e29e",
+        "text": "solo 52% ↑ · 5h full, back 30m",
+        "tone": "danger",
+        "accent": false,
+        "others": []
+      }
+    },
+    "fetchedAt": 1791158100000,
+    "errors": [
+      {
+        "source": "omp profile broken",
+        "message": "omp usage printed invalid JSON",
+        "profile": "broken"
+      },
+      {
+        "source": "omp profile ci",
+        "message": "omp usage timed out after 20s",
+        "profile": "ci"
+      }
+    ]
+  },
+  "usageSources": {
+    "global": [
+      {
+        "source": "omp-anthropic",
+        "key": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605",
+        "label": "me@gmail.com",
+        "harness": "OMP",
+        "input": {
+          "profile": "default",
+          "account": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605"
+        }
+      },
+      {
+        "source": "omp-anthropic",
+        "key": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605",
+        "label": "me@gmail.com",
+        "harness": "OMP",
+        "input": {
+          "profile": "gmail",
+          "account": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605"
+        }
+      },
+      {
+        "source": "omp-anthropic",
+        "key": "d545bb5b92485dce4cfd9a2122f865a9ae25d6042eedf883df0179cf3d42429d",
+        "label": "carol@acme.dev",
+        "harness": "OMP",
+        "input": {
+          "profile": "acme",
+          "account": "d545bb5b92485dce4cfd9a2122f865a9ae25d6042eedf883df0179cf3d42429d"
+        }
+      },
+      {
+        "source": "omp-anthropic",
+        "key": "eb02c6a3a66ba80828f645eec1629674d69bc936fb5ce40b549f6b94b4f8b030",
+        "label": "alice@acme.dev",
+        "harness": "OMP",
+        "input": {
+          "profile": "acme",
+          "account": "eb02c6a3a66ba80828f645eec1629674d69bc936fb5ce40b549f6b94b4f8b030"
+        }
+      },
+      {
+        "source": "omp-anthropic",
+        "key": "d3dd8916c91a5bf8423e0a0ba6be544f205a8e1f5894315d278fe3a136204be7",
+        "label": "bob@acme.dev",
+        "harness": "OMP",
+        "input": {
+          "profile": "acme",
+          "account": "d3dd8916c91a5bf8423e0a0ba6be544f205a8e1f5894315d278fe3a136204be7"
+        }
+      },
+      {
+        "source": "omp-openai-codex",
+        "key": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
+        "label": "dev@acme.dev",
+        "harness": "OMP",
+        "input": {
+          "profile": "default",
+          "account": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5"
+        }
+      },
+      {
+        "source": "omp-xai-oauth",
+        "key": "63d978e0d14537f54c0b9fc31ca4b243e01ee5d2f0073baaca8f74984daf40d3",
+        "label": "me@example.org",
+        "harness": "OMP",
+        "input": {
+          "profile": "default",
+          "account": "63d978e0d14537f54c0b9fc31ca4b243e01ee5d2f0073baaca8f74984daf40d3"
+        }
+      },
+      {
+        "source": "omp-github-copilot",
+        "key": "68e2a4b10ac1def0d9d8ab41b1b6985e1951657a2a31cb124cb91d0cd3756724",
+        "label": "octocat",
+        "harness": "OMP",
+        "input": {
+          "profile": "ci",
+          "account": "68e2a4b10ac1def0d9d8ab41b1b6985e1951657a2a31cb124cb91d0cd3756724"
+        }
+      },
+      {
+        "source": "omp-github-copilot",
+        "key": "68e2a4b10ac1def0d9d8ab41b1b6985e1951657a2a31cb124cb91d0cd3756724",
+        "label": "octocat",
+        "harness": "OMP",
+        "input": {
+          "profile": "gmail",
+          "account": "68e2a4b10ac1def0d9d8ab41b1b6985e1951657a2a31cb124cb91d0cd3756724"
+        }
+      },
+      {
+        "source": "omp-google-gemini-cli",
+        "key": "8f08f6dae32df2fb72586f820f77eb19eaeff5bf1c1d90e51e9368c24fd045bc",
+        "label": "gemini-proj-7",
+        "harness": "OMP",
+        "input": {
+          "profile": "default",
+          "account": "8f08f6dae32df2fb72586f820f77eb19eaeff5bf1c1d90e51e9368c24fd045bc"
+        }
+      },
+      {
+        "source": "omp",
+        "key": "292822602729eebb55496e7f4b540eadb0631d52506b15799a5f51412c59ca58",
+        "label": "Charm Hyper · ci",
+        "harness": "OMP",
+        "input": {
+          "profile": "ci",
+          "account": "292822602729eebb55496e7f4b540eadb0631d52506b15799a5f51412c59ca58"
+        }
+      }
+    ],
+    "omp Claude session": [],
+    "omp Codex session": [
+      {
+        "source": "omp-openai-codex",
+        "key": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
+        "label": "dev@acme.dev",
+        "harness": "OMP",
+        "input": {
+          "profile": "default",
+          "account": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5"
+        }
+      }
+    ],
+    "Claude Code session": []
+  },
+  "reports": {
+    "Codex · dev@acme.dev": {
+      "status": "available",
+      "planLabel": "self serve business prolite",
+      "observedAt": "2026-10-05T00:00:59.191Z",
+      "windows": [
+        {
+          "id": "openai-codex:primary",
+          "label": "7 days",
+          "usedPct": 26,
+          "remainingPct": 74,
+          "resetsAt": "2026-10-05T19:01:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "7d",
+          "summary": true,
+          "tone": "ok"
+        }
+      ],
+      "balances": [],
+      "details": [
+        {
+          "id": "use-first-openai-codex:primary",
+          "label": "↓ Use first",
+          "value": "74% of 7 days resets unused",
+          "tone": "warning"
+        },
+        {
+          "id": "banked-resets",
+          "label": "Banked resets",
+          "value": "2 full, next expires 2026-10-22"
+        }
+      ]
+    },
+    "Claude · me@gmail.com": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:00:59.401Z",
+      "windows": [
+        {
+          "id": "anthropic:5h",
+          "label": "Claude 5 Hour",
+          "usedPct": 22,
+          "remainingPct": 78,
+          "resetsAt": "2026-10-05T00:40:00.327Z",
+          "durationSeconds": 18000,
+          "shortLabel": "5h",
+          "tone": "ok"
+        },
+        {
+          "id": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "usedPct": 78,
+          "remainingPct": 22,
+          "resetsAt": "2026-10-06T10:00:00.327Z",
+          "durationSeconds": 604800,
+          "shortLabel": "7d",
+          "summary": true,
+          "tone": "warning"
+        },
+        {
+          "id": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "usedPct": 100,
+          "remainingPct": 0,
+          "resetsAt": "2026-10-06T10:00:00.327Z",
+          "durationSeconds": 604800,
+          "shortLabel": "fable",
+          "tone": "danger"
+        }
+      ],
+      "balances": [],
+      "details": []
+    },
+    "Grok · me@example.org": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:00:59.911Z",
+      "windows": [
+        {
+          "id": "xai-oauth:credits:1w",
+          "label": "SuperGrok Weekly Credits",
+          "usedPct": 4,
+          "remainingPct": 96,
+          "resetsAt": "2026-10-08T16:24:19.457Z",
+          "durationSeconds": 604800,
+          "shortLabel": "7d",
+          "summary": true,
+          "tone": "ok"
+        }
+      ],
+      "balances": [],
+      "details": []
+    },
+    "Claude · carol@acme.dev": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:01:00.000Z",
+      "windows": [
+        {
+          "id": "five_hour",
+          "label": "Session",
+          "usedPct": 12,
+          "remainingPct": 88,
+          "resetsAt": "2026-10-05T01:01:00.000Z",
+          "durationSeconds": 18000,
+          "shortLabel": "5h",
+          "tone": "ok"
+        },
+        {
+          "id": "weekly",
+          "label": "Weekly",
+          "usedPct": 41,
+          "remainingPct": 59,
+          "resetsAt": "2026-10-09T00:01:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "wk",
+          "summary": true,
+          "tone": "ok"
+        },
+        {
+          "id": "weekly_model_fable",
+          "label": "Weekly · Fable",
+          "usedPct": 8,
+          "remainingPct": 92,
+          "resetsAt": "2026-10-09T00:01:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "wk Fable",
+          "tone": "ok"
+        }
+      ],
+      "balances": [],
+      "details": []
+    },
+    "Copilot · octocat": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:00:59.620Z",
+      "windows": [
+        {
+          "id": "github-copilot:premium",
+          "label": "Premium requests",
+          "usedPct": 40,
+          "remainingPct": 60,
+          "resetsAt": "2026-11-01T00:00:00.000Z",
+          "shortLabel": "monthly",
+          "summary": true,
+          "tone": "ok"
+        }
+      ],
+      "balances": [],
+      "details": []
+    },
+    "Charm Hyper · ci": {
+      "status": "available",
+      "observedAt": "2026-10-04T23:55:00.000Z",
+      "windows": [],
+      "balances": [
+        {
+          "id": "charm-hyper:credits",
+          "label": "Credit balance",
+          "unit": "credits",
+          "used": null,
+          "limit": null,
+          "remaining": 1200,
+          "resetsAt": null,
+          "tone": "ok"
+        }
+      ],
+      "details": []
+    },
+    "Cursor · pat@cursor.dev": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:01:00.000Z",
+      "windows": [],
+      "balances": [
+        {
+          "id": "included",
+          "label": "Included usage",
+          "unit": "usd",
+          "used": 14.5,
+          "limit": 20,
+          "remaining": null,
+          "resetsAt": "2026-10-17T00:01:00.000Z",
+          "tone": "warning"
+        }
+      ],
+      "details": []
+    },
+    "Claude · alice@acme.dev": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:00:59.300Z",
+      "windows": [
+        {
+          "id": "anthropic:5h",
+          "label": "Claude 5 Hour",
+          "usedPct": 45,
+          "remainingPct": 55,
+          "resetsAt": "2026-10-05T02:30:00.000Z",
+          "durationSeconds": 18000,
+          "shortLabel": "5h",
+          "tone": "ok"
+        },
+        {
+          "id": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "usedPct": 93,
+          "remainingPct": 7,
+          "resetsAt": "2026-10-07T11:00:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "7d",
+          "summary": true,
+          "tone": "danger"
+        },
+        {
+          "id": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "usedPct": 12,
+          "remainingPct": 88,
+          "resetsAt": "2026-10-07T11:00:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "fable",
+          "tone": "ok"
+        }
+      ],
+      "balances": [
+        {
+          "id": "anthropic:extra",
+          "label": "Claude Extra Usage",
+          "unit": "usd",
+          "used": 74.97,
+          "limit": 500,
+          "remaining": 425.03,
+          "resetsAt": null,
+          "tone": "ok"
+        }
+      ],
+      "details": [
+        {
+          "id": "banked-resets",
+          "label": "Banked resets",
+          "value": "1 full, next expires 2026-10-05 · 2 fable, next expires 2027-01-05"
+        },
+        {
+          "id": "organization",
+          "label": "Organization",
+          "value": "Acme - Claude Team"
+        }
+      ]
+    },
+    "Claude · solo@claude.dev": {
+      "status": "available",
+      "planLabel": "max 20x",
+      "observedAt": "2026-10-05T00:01:00.000Z",
+      "windows": [
+        {
+          "id": "five_hour",
+          "label": "Session",
+          "usedPct": 100,
+          "remainingPct": 0,
+          "resetsAt": "2026-10-05T00:31:00.000Z",
+          "durationSeconds": 18000,
+          "shortLabel": "5h",
+          "tone": "danger"
+        },
+        {
+          "id": "weekly",
+          "label": "Weekly",
+          "usedPct": 52,
+          "remainingPct": 48,
+          "resetsAt": "2026-10-10T00:01:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "wk",
+          "summary": true,
+          "tone": "ok"
+        }
+      ],
+      "balances": [],
+      "details": []
+    },
+    "Claude · bob@acme.dev": {
+      "status": "available",
+      "observedAt": "2026-10-05T00:00:59.350Z",
+      "windows": [
+        {
+          "id": "anthropic:5h",
+          "label": "Claude 5 Hour",
+          "usedPct": 3,
+          "remainingPct": 97,
+          "resetsAt": "2026-10-05T04:00:00.000Z",
+          "durationSeconds": 18000,
+          "shortLabel": "5h",
+          "tone": "ok"
+        },
+        {
+          "id": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "usedPct": 100,
+          "remainingPct": 0,
+          "resetsAt": "2026-10-08T11:00:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "7d",
+          "summary": true,
+          "tone": "danger"
+        },
+        {
+          "id": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "usedPct": 95,
+          "remainingPct": 5,
+          "resetsAt": "2026-10-08T11:00:00.000Z",
+          "durationSeconds": 604800,
+          "shortLabel": "fable",
+          "tone": "danger"
+        }
+      ],
+      "balances": [],
+      "details": [
+        {
+          "id": "redeem",
+          "label": "⟲ Redeem a full reset",
+          "value": "weekly limit reached for over a day",
+          "tone": "warning"
+        },
+        {
+          "id": "banked-resets",
+          "label": "Banked resets",
+          "value": "1 full, next expires 2026-11-01"
+        },
+        {
+          "id": "organization",
+          "label": "Organization",
+          "value": "Acme - Claude Team"
+        }
+      ]
+    },
+    "Gemini · gemini-proj-7": {
+      "status": "unavailable",
+      "problem": {
+        "kind": "no_quota",
+        "detail": "omp has no usage report for this login."
+      }
+    },
+    "Kimi · kim@moonshot.dev": {
+      "status": "unavailable",
+      "problem": {
+        "kind": "no_quota",
+        "detail": "Kimi rejected the saved API key"
+      }
+    }
+  }
+}

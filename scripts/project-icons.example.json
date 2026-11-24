@@ -1,0 +1,5 @@
+{
+  "/home/me/code/website": { "glyph": "globe", "color": "#2563eb" },
+  "/home/me/code/api": { "glyph": "server", "color": "#16a34a" },
+  "/home/me": { "glyph": "house", "color": "#525252" }
+}

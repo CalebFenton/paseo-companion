@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // paseo-plugin.json's runtime loads the two index files; the scripts are run by hand.
+  "entry": ["index.client.tsx", "index.server.ts", "scripts/*.ts"],
+  "project": ["**/*.{ts,tsx,mts}"],
+  // `vitest run` takes the default include; the e2e config replaces it, so knip needs both.
+  "vitest": { "entry": ["**/*.test.ts", "e2e/**/*.e2e.ts"] },
+  // scripts/project-icons.ts resolves glyphs by a computed path, which knip cannot follow.
+  "ignoreDependencies": ["lucide-static"],
+  // The globally installed Paseo CLI that the e2e test drives.
+  "ignoreBinaries": ["paseo"],
+}

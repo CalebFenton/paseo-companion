@@ -1,0 +1,5 @@
+node_modules/
+# Each machine's own project icon spec; scripts/project-icons.example.json shows its form.
+scripts/project-icons.json
+# The private-text hook's patterns; committing them would publish what they guard.
+.private-patterns

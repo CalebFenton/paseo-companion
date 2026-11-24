@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "tsBuildInfoFile": "node_modules/.cache/tsc/server.tsbuildinfo"
+  },
+  "include": ["server", "shared", "e2e", "scripts", "index.server.ts", "vitest.e2e.config.mts"]
+}

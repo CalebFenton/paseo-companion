@@ -1,0 +1,47 @@
+{
+  "name": "paseo-companion",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "paseo-plugin.json",
+    "index.client.tsx",
+    "index.server.ts",
+    "client/",
+    "server/",
+    "shared/"
+  ],
+  "type": "module",
+  "scripts": {
+    "prepare": "prek install",
+    "check": "prek run --all-files",
+    "format": "oxfmt",
+    "lint": "oxlint --deny-warnings",
+    "lint:md": "rumdl check",
+    "typecheck": "tsc -b",
+    "knip": "knip",
+    "dupes": "jscpd .",
+    "test": "vitest run",
+    "e2e": "vitest run --config vitest.e2e.config.mts --reporter=verbose",
+    "icons": "node scripts/project-icons.ts"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "^0.17.2",
+    "@j178/prek": "0.5.11",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^22.20.5",
+    "@types/react": "~19.2.0",
+    "jscpd": "5.4.3",
+    "knip": "6.48.0",
+    "lucide-static": "^1.77.0",
+    "oxfmt": "0.80.0",
+    "oxlint": "1.95.0",
+    "oxlint-tsgolint": "7.0.2008",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "rumdl": "0.3.5",
+    "typescript": "7.0.2",
+    "vitest": "^4.1.6",
+    "zod": "^4.4.3"
+  }
+}

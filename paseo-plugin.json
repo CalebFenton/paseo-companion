@@ -1,0 +1,7 @@
+{
+  "id": "paseo-companion",
+  "description": "A Paseo companion: usage for every account, omp's profiles and Paseo's own sources alike (session pills, a sidebar row, Usage cards); which pull requests need your response, review, re-review, or merge, also on each workspace's sidebar row; and a System screen charting each host's CPU, memory, load, pressure, disk, network, and filesystems.",
+  "requirements": {
+    "paseo": ">=0.17.0"
+  }
+}

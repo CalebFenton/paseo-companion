@@ -1,0 +1,10 @@
+# The pre-commit hook passes this file with --config; pass it the same way to a scan by hand.
+[extend]
+useDefault = true
+
+# The usage view keys each account by a SHA-256 of its login, which the generic key rule takes for a secret.
+[[allowlists]]
+description = "Account ids in the usage view snapshot"
+condition = "AND"
+paths = ['''^fixtures/usage\.view\.json$''']
+regexes = ['''^[0-9a-f]{64}$''']
