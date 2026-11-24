@@ -36,9 +36,10 @@ function account(id: string, windows: Partial<Window>[], rest: Partial<Account> 
   };
 }
 
-it("flags an account-wide weekly limit resetting within a day with a quarter or more unused", () => {
+it("flags an account-wide weekly limit resetting within a day with a tenth or more unused", () => {
   expect(outlookOf(window, now)).toBe("unused");
-  expect(outlookOf({ ...window, usedPct: 80 }, now)).toBe("onTrack");
+  expect(outlookOf({ ...window, usedPct: 76 }, now)).toBe("unused");
+  expect(outlookOf({ ...window, usedPct: 91 }, now)).toBe("onTrack");
   expect(outlookOf({ ...window, resetsAt: now + 30 * HOUR_MS }, now)).toBe("onTrack");
 });
 

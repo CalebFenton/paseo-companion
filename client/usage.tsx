@@ -421,7 +421,7 @@ export function createUsageTrailing(store: UsageStore) {
     if (!alarm || !account) return <WeeklyStrip theme={theme} accounts={snapshot.accounts} />;
     return (
       <View accessibilityLabel={`${account.title}: ${alarm.text}`} style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-        <AccountMark theme={theme} account={account} size={13} />
+        <AccountMark theme={theme} account={account} size={13} named />
         <TonedText theme={theme} tone="ok" accent>
           {alarm.text}
         </TonedText>

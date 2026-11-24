@@ -17,7 +17,7 @@ export type Summary = z.infer<typeof summarySchema>;
 
 /**
  * Where a window is headed: reached its limit; on pace to run out before it resets; resetting
- * within a day with a quarter or more unused (weekly windows only); else on track.
+ * within a day with a tenth or more unused (weekly windows only); else on track.
  */
 const outlookSchema = z.enum(["reached", "runsOut", "unused", "onTrack"]);
 export type Outlook = z.infer<typeof outlookSchema>;

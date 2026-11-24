@@ -33,7 +33,9 @@ const BRANDS: Record<string, Brand> = {
 
 const NEUTRAL: Brand = { icon: "Bot", color: null };
 
-export function brandOf(vendor: string, theme: PluginTheme): { icon: PluginIcon; color: string } {
-  const { icon, color } = BRANDS[vendor] ?? NEUTRAL;
-  return { icon, color: color ?? theme.colors.foreground };
+/** The vendor's logo and its color; `logo` is false where the vendor has none and a neutral glyph stands in. */
+export function brandOf(vendor: string, theme: PluginTheme): { icon: PluginIcon; color: string; logo: boolean } {
+  const known = BRANDS[vendor];
+  const { icon, color } = known ?? NEUTRAL;
+  return { icon, color: color ?? theme.colors.foreground, logo: known !== undefined };
 }

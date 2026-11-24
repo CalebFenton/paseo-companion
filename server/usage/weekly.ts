@@ -2,9 +2,12 @@ import { DAY_MS } from "../../shared/format";
 import type { Outlook } from "../../shared/usage";
 import type { Account, BankedReset, Window } from "./accounts";
 
-/** A weekly window resetting within this long with at least `UNUSED_PCT` left is about to waste it. */
+/**
+ * A weekly window resetting within this long with at least `UNUSED_PCT` left is about to waste it.
+ * A tenth of a week is still most of a day's work, so the bar sits low.
+ */
 const UNUSED_WITHIN_MS = DAY_MS;
-const UNUSED_PCT = 25;
+const UNUSED_PCT = 10;
 
 /**
  * The limits that ration an account: account-wide windows a day or longer, such as Claude's and
