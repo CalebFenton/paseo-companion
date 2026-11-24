@@ -11,7 +11,7 @@ import { joinParts } from "../shared/format";
 import { PLUGIN_ID } from "../shared/plugin";
 import { type PullRequestRow, type PullRequestsView, pullRequestsFeed, pullRequestsRpc } from "../shared/pull-requests";
 import { type SystemView, systemFeed } from "../shared/system";
-import { type AccountView, limitText, usageFeed, usageRpc } from "../shared/usage";
+import { type AccountView, limitText, type UsageView, usageFeed, usageRpc } from "../shared/usage";
 
 /** How a subscription's event reaches the client. */
 const eventMessageSchema = z.object({ type: z.literal("plugin.rpc.event"), payload: z.object({ event: z.unknown() }) });
@@ -90,7 +90,15 @@ function sampledAfter(at: number): (event: SystemView) => boolean {
 function printAccount(account: AccountView): void {
   const resets = account.resets.map(({ scope, count, usable }) => `⟲ ${count} ${scope} (${usable} usable)`).join(", ");
   const limits = account.windows.map(limitText).join(" · ");
-  console.log(`    ${account.title}: ${joinParts([limits, resets === "" ? null : resets, account.redeem ? "REDEEM" : null])}`);
+  const mark = `${account.avatar.symbol} ${account.vendor}`;
+  console.log(`    ${mark} ${account.label}: ${joinParts([limits, resets === "" ? null : resets, account.redeem ? "UNLOCK" : null])}`);
+}
+
+function printUsage(usage: UsageView): void {
+  const alarm = usage.overview;
+  const sidebar = alarm ? `${usage.accounts.find(({ id }) => id === alarm.accountId)?.label}: ${alarm.text}` : "weekly strip";
+  console.log(`  ${usage.accounts.length} accounts, in use order; sidebar: ${sidebar}`);
+  for (const account of usage.accounts) printAccount(account);
 }
 
 it("lists pull requests from a fresh GitHub read", async () => {
@@ -107,8 +115,7 @@ it("reads usage for every omp profile and Paseo's own sources", async () => {
   const usage = await call(usageRpc, { agents: [], refresh: true });
   expect(usage.errors).toEqual([]);
   expect(usage.accounts.length).toBeGreaterThan(0);
-  console.log(`  ${usage.accounts.length} accounts, in use order; sidebar: ${usage.overview.text}`);
-  for (const account of usage.accounts) printAccount(account);
+  printUsage(usage);
   const subscribed = await pushed(usageFeed, { agents: [] }, () => true);
   expect(subscribed.accounts.map(({ id }) => id)).toEqual(usage.accounts.map(({ id }) => id));
 });

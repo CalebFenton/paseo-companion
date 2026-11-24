@@ -59,11 +59,18 @@ const balanceSchema = z.object({
   remaining: z.number().nullable(),
 });
 
+/** How a login is told apart at a glance beside its vendor's logo: a glyph in a color, "◆" in pink. */
+const avatarSchema = z.object({ symbol: z.string(), color: z.string() });
+export type Avatar = z.infer<typeof avatarSchema>;
+
 const accountSchema = z.object({
   /** Stable across profiles and token rotation; also the Usage-screen account key. */
   id: z.string(),
   /** omp provider id, or the id of the Paseo usage source that read it, such as "cursor". */
   provider: z.string(),
+  /** "Claude", "Codex": the brand whose logo marks the account. */
+  vendor: z.string(),
+  avatar: avatarSchema,
   /** "Claude · me@example.com", for pills and lists. */
   title: z.string(),
   /** Card heading: the vendor, with the organization when there is one. */
@@ -122,9 +129,9 @@ export function resetsText(resets: AccountView["resets"], expiry?: (at: number) 
 }
 
 /**
- * A composer pill: the account an agent's session draws from, by its short name, and its fullest
- * weekly limit's `windowState`, then each limit stopping the session's model now: "alice 57% ↑",
- * "bob 40% · 5h full".
+ * A composer pill: the account an agent's session draws from, by its avatar's glyph, and its fullest
+ * weekly limit's `windowState`, then each limit stopping the session's model now: "◆ 57% ↑",
+ * "★ 40% · 5h full".
  */
 const pillSchema = summarySchema.extend({
   accountId: z.string(),
@@ -149,8 +156,11 @@ export type AgentRef = z.infer<typeof agentRefSchema>;
 const usageViewSchema = z.object({
   /** In the order to use them, so no quota resets unused: about to reset unused, on track, running out early, full; each by its next deadline. */
   accounts: z.array(accountSchema),
-  /** The sidebar row: a short sentence of its one most pressing item; see `overview` on the daemon side. */
-  overview: summarySchema,
+  /**
+   * What the sidebar row says: a login about to let quota reset unused, and how much and when,
+   * "70% unused · 2h"; null when none is, and the row draws each account's weekly use instead.
+   */
+  overview: z.object({ accountId: z.string(), text: z.string() }).nullable(),
   /** By agent id, for agents whose account is known: omp's by its pins, others' by their provider's sole sign-in. */
   pills: z.record(z.string(), pillSchema),
   /** Epoch milliseconds of the oldest report shown. */

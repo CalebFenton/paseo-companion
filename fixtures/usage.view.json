@@ -4,6 +4,11 @@
       {
         "id": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
         "provider": "openai-codex",
+        "vendor": "Codex",
+        "avatar": {
+          "symbol": "☾︎",
+          "color": "#64748b"
+        },
         "label": "dev@acme.dev",
         "organization": null,
         "plan": "self serve business prolite",
@@ -48,6 +53,11 @@
       {
         "id": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605",
         "provider": "anthropic",
+        "vendor": "Claude",
+        "avatar": {
+          "symbol": "◆︎",
+          "color": "#8b5cf6"
+        },
         "label": "me@gmail.com",
         "organization": null,
         "plan": null,
@@ -111,6 +121,11 @@
       {
         "id": "63d978e0d14537f54c0b9fc31ca4b243e01ee5d2f0073baaca8f74984daf40d3",
         "provider": "xai-oauth",
+        "vendor": "Grok",
+        "avatar": {
+          "symbol": "✿︎",
+          "color": "#64748b"
+        },
         "label": "me@example.org",
         "organization": null,
         "plan": null,
@@ -147,6 +162,11 @@
       {
         "id": "d545bb5b92485dce4cfd9a2122f865a9ae25d6042eedf883df0179cf3d42429d",
         "provider": "anthropic",
+        "vendor": "Claude",
+        "avatar": {
+          "symbol": "♠︎",
+          "color": "#64748b"
+        },
         "label": "carol@acme.dev",
         "organization": null,
         "plan": null,
@@ -209,6 +229,11 @@
       {
         "id": "68e2a4b10ac1def0d9d8ab41b1b6985e1951657a2a31cb124cb91d0cd3756724",
         "provider": "github-copilot",
+        "vendor": "Copilot",
+        "avatar": {
+          "symbol": "★︎",
+          "color": "#65a30d"
+        },
         "label": "octocat",
         "organization": null,
         "plan": null,
@@ -246,6 +271,11 @@
       {
         "id": "292822602729eebb55496e7f4b540eadb0631d52506b15799a5f51412c59ca58",
         "provider": "charm-hyper",
+        "vendor": "Charm Hyper",
+        "avatar": {
+          "symbol": "☀︎",
+          "color": "#14b8a6"
+        },
         "label": "ci",
         "organization": null,
         "plan": null,
@@ -281,6 +311,11 @@
       {
         "id": "1f301fe408d67619d84970214c01c1ecdeace6186a178b23dbaf69d39240880f",
         "provider": "cursor",
+        "vendor": "Cursor",
+        "avatar": {
+          "symbol": "♦︎",
+          "color": "#14b8a6"
+        },
         "label": "pat@cursor.dev",
         "organization": null,
         "plan": null,
@@ -314,6 +349,11 @@
       {
         "id": "eb02c6a3a66ba80828f645eec1629674d69bc936fb5ce40b549f6b94b4f8b030",
         "provider": "anthropic",
+        "vendor": "Claude",
+        "avatar": {
+          "symbol": "♥︎",
+          "color": "#64748b"
+        },
         "label": "alice@acme.dev",
         "organization": "Acme - Claude Team",
         "plan": null,
@@ -404,6 +444,11 @@
       {
         "id": "44d7684767f26012e5fd4e9ccd31b19b6e36f714f83b485a9ba8e11d0e76e29e",
         "provider": "claude",
+        "vendor": "Claude",
+        "avatar": {
+          "symbol": "♣︎",
+          "color": "#14b8a6"
+        },
         "label": "solo@claude.dev",
         "organization": null,
         "plan": "max 20x",
@@ -451,6 +496,11 @@
       {
         "id": "d3dd8916c91a5bf8423e0a0ba6be544f205a8e1f5894315d278fe3a136204be7",
         "provider": "anthropic",
+        "vendor": "Claude",
+        "avatar": {
+          "symbol": "●︎",
+          "color": "#14b8a6"
+        },
         "label": "bob@acme.dev",
         "organization": "Acme - Claude Team",
         "plan": null,
@@ -523,6 +573,11 @@
       {
         "id": "8f08f6dae32df2fb72586f820f77eb19eaeff5bf1c1d90e51e9368c24fd045bc",
         "provider": "google-gemini-cli",
+        "vendor": "Gemini",
+        "avatar": {
+          "symbol": "▲︎",
+          "color": "#14b8a6"
+        },
         "label": "gemini-proj-7",
         "organization": null,
         "plan": null,
@@ -545,6 +600,11 @@
       {
         "id": "42ad9d7f6b174bc8c80cf7703b2fde926a5421450facf5f45e850ccc1b5faf28",
         "provider": "kimi",
+        "vendor": "Kimi",
+        "avatar": {
+          "symbol": "♪︎",
+          "color": "#64748b"
+        },
         "label": "kim@moonshot.dev",
         "organization": null,
         "plan": null,
@@ -564,14 +624,13 @@
       }
     ],
     "overview": {
-      "text": "Codex: 74% expires in 19h",
-      "tone": "ok",
-      "accent": true
+      "accountId": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
+      "text": "74% unused · 19h"
     },
     "pills": {
       "gmail-opus": {
         "accountId": "4c3de5ab9ac720e822717ed1266130bf5034c3b5a9d08e3ae80eb6cf8fe9b605",
-        "text": "me@gmail 78%",
+        "text": "◆︎ 78%",
         "tone": "warning",
         "accent": false,
         "others": [
@@ -591,7 +650,7 @@
       },
       "acme-pinned-fable": {
         "accountId": "d3dd8916c91a5bf8423e0a0ba6be544f205a8e1f5894315d278fe3a136204be7",
-        "text": "bob full, back 3d 10h",
+        "text": "●︎ full, back 3d 10h",
         "tone": "danger",
         "accent": false,
         "others": [
@@ -611,14 +670,14 @@
       },
       "default-codex": {
         "accountId": "ee8c49fb904d5ec69e71991536c2fac996638f910c34f09ab2b0a06590ac7ec5",
-        "text": "dev 26% ↓ 19h",
+        "text": "☾︎ 26% ↓ 19h",
         "tone": "ok",
         "accent": true,
         "others": []
       },
       "native-claude": {
         "accountId": "44d7684767f26012e5fd4e9ccd31b19b6e36f714f83b485a9ba8e11d0e76e29e",
-        "text": "solo 52% ↑ · 5h full, back 30m",
+        "text": "♣︎ 52% ↑ · 5h full, back 30m",
         "tone": "danger",
         "accent": false,
         "others": []
@@ -1081,8 +1140,8 @@
       "details": [
         {
           "id": "redeem",
-          "label": "⟲ Redeem a full reset",
-          "value": "weekly limit reached for over a day",
+          "label": "⟲ Unlock with a banked reset",
+          "value": "the weekly limit is full for over a day; a banked full reset clears it now",
           "tone": "warning"
         },
         {

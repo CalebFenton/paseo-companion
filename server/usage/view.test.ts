@@ -5,6 +5,7 @@ import { z } from "zod";
 import { DAY_MS, HOUR_MS } from "../../shared/format";
 import { type AccountView, agentRefSchema } from "../../shared/usage";
 import type { ProfileUsage } from "./accounts";
+import { avatars } from "./avatars";
 import { buildUsageView, discoverAccounts, scopeLogins, toUsageReport, USAGE_SOURCES } from "./view";
 
 /** omp outputs per profile, Paseo's own usage sources, omp's session pins as `identity_key` by cache key, Paseo's config and agents, and Usage-screen scopes. */
@@ -69,38 +70,38 @@ function report(email: string, usedPct: number, resetsInMs: number, resetExpires
 const READS = {
   /** 70% of the week left, resetting in 12 hours. */
   unused: report("wasting@example.com", 30, 12 * HOUR_MS),
-  /** Full for 3 more days, with a full reset to redeem. */
+  /** 60% left, resetting in 20 hours: unused too, but later in use order than `unused`. */
+  later: report("later@example.com", 40, 20 * HOUR_MS),
+  /** Full for 3 more days, with a full reset to unlock it. */
   redeem: report("redeemer@example.com", 100, 3 * DAY_MS, 10 * DAY_MS),
-  /** On track, with a full reset expiring in 6 hours. */
-  expiring: report("expiring@example.com", 50, 3 * DAY_MS, 6 * HOUR_MS),
-  /** Full, back in 12 hours: too soon for a reset to be worth redeeming. */
-  full: report("full@example.com", 100, 12 * HOUR_MS),
   fine: report("fine@example.com", 20, 3 * DAY_MS),
 };
 
-function overviewOf(reads: (keyof typeof READS)[], unread: boolean, failed: boolean) {
+/** What the sidebar row says for these reads: the alarmed login and the sentence, else "strip". */
+function sidebarOf(reads: (keyof typeof READS)[]) {
   const profiles: ProfileUsage[] = [
     {
       profile: "default",
-      usage: {
-        reports: reads.map((read) => READS[read]),
-        accountsWithoutUsage: unread ? [{ provider: "anthropic", email: "unread@example.com" }] : [],
-        disabledCredentials: [],
-      },
+      usage: { reports: reads.map((read) => READS[read]), accountsWithoutUsage: [], disabledCredentials: [] },
       error: null,
     },
-    ...(failed ? [{ profile: "broken", error: "omp usage timed out after 20s" }] : []),
   ];
-  const { text, tone } = buildUsageView({ profiles, providers: undefined, env: {}, agents: [], now, pinnedIdentity: () => null }).overview;
-  return `${tone}: ${text}`;
+  const view = buildUsageView({ profiles, providers: undefined, env: {}, agents: [], now, pinnedIdentity: () => null });
+  if (view.overview === null) return "strip";
+  const { accountId, text } = view.overview;
+  return `${view.accounts.find((account) => account.id === accountId)?.label}: ${text}`;
 }
 
-it("words the sidebar's most pressing item in a fixed order, so checking any one earlier than its place picks the wrong sentence", () => {
-  expect(overviewOf(["unused", "redeem", "expiring", "full", "fine"], true, true)).toBe("ok: wasting: 70% expires in 12h");
-  expect(overviewOf(["redeem", "expiring", "full", "fine"], true, true)).toBe("ok: redeem a reset: redeemer");
-  expect(overviewOf(["expiring", "full", "fine"], true, true)).toBe("warning: a full reset expires within a day");
-  expect(overviewOf(["full", "fine"], true, true)).toBe("danger: 1 of 3 accounts full");
-  expect(overviewOf(["fine"], true, true)).toBe("warning: 1 account without data");
-  expect(overviewOf(["fine"], false, true)).toBe("warning: a usage read failed");
-  expect(overviewOf(["fine"], false, false)).toBe("ok: 1 account, all fine");
+it("raises the sidebar row only for quota about to reset unused, soonest first; anything else leaves the strip", () => {
+  expect(sidebarOf(["fine", "later", "redeem", "unused"])).toBe("wasting@example.com: 70% unused · 12h");
+  expect(sidebarOf(["fine", "later", "redeem"])).toBe("later@example.com: 60% unused · 20h");
+  expect(sidebarOf(["fine", "redeem"])).toBe("strip");
+});
+
+it("keeps each login's glyph whatever order the logins arrive in, and gives 16 logins 16 glyphs", () => {
+  const ids = Array.from({ length: 16 }, (_, index) => `login-${index}`);
+  const forward = avatars(ids);
+  const backward = avatars(ids.toReversed());
+  expect(ids.map((id) => backward.get(id))).toEqual(ids.map((id) => forward.get(id)));
+  expect(new Set(ids.map((id) => forward.get(id)?.symbol)).size).toBe(16);
 });

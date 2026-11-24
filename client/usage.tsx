@@ -15,6 +15,7 @@ import {
   type WindowView,
   windowState,
 } from "../shared/usage";
+import { AccountMark, WeeklyStrip } from "./account-mark";
 import { useLiveState } from "./live-store";
 import { emphasis, Meter, Page, ReadStatus, styles, type Themed, TonedText, useNow } from "./ui";
 import { listProblems, type UsageStore } from "./usage-store";
@@ -137,9 +138,12 @@ function AccountCard({
     <View style={{ gap: 10 }}>
       {named ? (
         <View style={{ gap: 2 }}>
-          <Text style={s.strong} numberOfLines={1}>
-            {account.heading}
-          </Text>
+          <View style={s.label}>
+            <AccountMark theme={theme} account={account} />
+            <Text style={{ ...s.strong, flexShrink: 1 }} numberOfLines={1}>
+              {account.heading}
+            </Text>
+          </View>
           <Text style={s.muted} numberOfLines={1}>
             {joinParts([account.label, stale])}
           </Text>
@@ -180,7 +184,7 @@ function AccountCard({
         ))}
       {account.redeem ? (
         <TonedText theme={theme} tone="ok" accent>
-          {`⟲ Redeem a full reset: the weekly limit is otherwise back ${when(account.redeem.backAt)}`}
+          {`⟲ Full, back ${when(account.redeem.backAt)}. A banked full reset unlocks it now.`}
         </TonedText>
       ) : null}
       {account.resets.map(({ scope, count, usable, expiresAt, tone }) => (
@@ -232,9 +236,12 @@ export function createAgentPopover(store: UsageStore) {
               return (
                 <View key={other.accountId} style={{ gap: 2 }}>
                   <View style={s.row}>
-                    <Text style={{ ...s.text, flexShrink: 1 }} numberOfLines={1}>
-                      {view.label}
-                    </Text>
+                    <View style={{ ...s.label, flexShrink: 1 }}>
+                      <AccountMark theme={props.theme} account={view} />
+                      <Text style={{ ...s.text, flexShrink: 1 }} numberOfLines={1}>
+                        {view.label}
+                      </Text>
+                    </View>
                     <TonedText theme={props.theme} tone={other.tone} accent={other.accent}>
                       {other.accent ? `use first · ${other.text}` : other.text}
                     </TonedText>
@@ -251,12 +258,12 @@ export function createAgentPopover(store: UsageStore) {
 }
 
 /** The Usage screen's columns on wide layouts; phones stack the bar under the name. */
-const NAME_COLUMN = 220;
+const NAME_COLUMN = 250;
 const STATE_COLUMN = 120;
 
 /** What the row's symbols mean, once, above the list. */
 const LEGEND =
-  "Bar: weekly limit used · paler: where it ends at this pace · │ now in the week. ↓ resets unused soon · ↑ runs out early · ⟲ banked resets";
+  "Logo: vendor · glyph: which login. Bar: weekly limit used · paler: where it ends at this pace · │ now in the week. ↓ resets unused soon · ↑ runs out early · ⟲ banked resets";
 
 /** Under a row's bar: what its fullest weekly limit does next, worded by `when` as of now; else its first balance. */
 function nextStep(account: AccountView, weekly: WindowView | undefined, when: (time: number) => string): Summary | null {
@@ -276,7 +283,7 @@ function nextStep(account: AccountView, weekly: WindowView | undefined, when: (t
 
 /** A row's banked-reset badge: redeem one now, else what is banked. */
 function resetsBadge(account: AccountView): Summary | null {
-  if (account.redeem) return { text: "⟲ redeem now", tone: "ok", accent: true };
+  if (account.redeem) return { text: "⟲ unlock now", tone: "ok", accent: true };
   if (account.resets.length === 0) return null;
   return { text: `⟲ ${resetsText(account.resets)}`, tone: worstTone(account.resets.map((group) => group.tone)), accent: false };
 }
@@ -336,9 +343,12 @@ function AccountRow({ account, theme, compact }: Themed & { account: AccountView
         <View style={{ ...s.row, gap: 14 }}>
           <Icon name={expanded ? "ChevronDown" : "ChevronRight"} size={14} color={theme.colors.foregroundMuted} />
           <View style={{ width: compact ? undefined : NAME_COLUMN, flex: compact ? 1 : undefined }}>
-            <Text style={s.text} numberOfLines={1}>
-              {account.label}
-            </Text>
+            <View style={s.label}>
+              <AccountMark theme={theme} account={account} />
+              <Text style={{ ...s.text, flexShrink: 1 }} numberOfLines={1}>
+                {account.label}
+              </Text>
+            </View>
             <Text style={s.muted} numberOfLines={1}>
               {account.heading}
             </Text>
@@ -392,15 +402,30 @@ export function createUsagePage(store: UsageStore) {
   };
 }
 
-/** The sidebar footer row's trailing text: the one most pressing item, as `overview` words it. */
+/**
+ * The sidebar footer row's trailing slot: the login about to let quota reset unused, by its mark,
+ * with how much and when; else every account's weekly use as a strip of bars.
+ */
 export function createUsageTrailing(store: UsageStore) {
   return function UsageTrailing({ theme }: Themed) {
     const { snapshot, error } = useLiveState(store);
-    const overview = snapshot?.overview ?? { text: error ? "unavailable" : "…", tone: error ? "danger" : "ok", accent: false };
+    if (!snapshot) {
+      return (
+        <TonedText theme={theme} tone={error ? "danger" : "ok"}>
+          {error ? "unavailable" : "…"}
+        </TonedText>
+      );
+    }
+    const alarm = snapshot.overview;
+    const account = alarm && snapshot.accounts.find((candidate) => candidate.id === alarm.accountId);
+    if (!alarm || !account) return <WeeklyStrip theme={theme} accounts={snapshot.accounts} />;
     return (
-      <TonedText theme={theme} tone={overview.tone} accent={overview.accent}>
-        {overview.text}
-      </TonedText>
+      <View accessibilityLabel={`${account.title}: ${alarm.text}`} style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+        <AccountMark theme={theme} account={account} size={13} />
+        <TonedText theme={theme} tone="ok" accent>
+          {alarm.text}
+        </TonedText>
+      </View>
     );
   };
 }

@@ -1,11 +1,12 @@
 import { type UsageAccount, type UsageDetail, type UsageReport, type UsageScope, windowFromUsedPct } from "@getpaseo/plugin/server/usage";
-import { countdown, DAY_MS, percent, plural, usd } from "../../shared/format";
+import { countdown, DAY_MS, percent, usd } from "../../shared/format";
 import { worstTone } from "../../shared/tone";
 import { type AccountView, type AgentRef, resetsText, type Summary, type UsageView, windowState } from "../../shared/usage";
 import { type Account, type Balance, type ProfileUsage, readAccounts, type Window } from "./accounts";
 import { bindAgents, type DaemonEnv, ompVendorOf, type PinLookup, profileOf } from "./agents";
 import { runsOutAt } from "./pace";
 import { readPaseoAccounts } from "./paseo";
+import { avatars } from "./avatars";
 import { PROVIDERS } from "./providers";
 import { accountOutlook, byUseOrder, outlookOf, redeemable, resetScope, weeklyWindows } from "./weekly";
 
@@ -75,18 +76,6 @@ function resetGroups(account: Account, now: number): AccountView["resets"] {
   return [...groups.values()].toSorted((a, b) => Number(b.scope === "full") - Number(a.scope === "full") || a.scope.localeCompare(b.scope));
 }
 
-/** The part of an email before "@"; any other label as is. */
-function localPart(label: string): string {
-  return label.slice(0, Math.max(0, label.indexOf("@"))) || label;
-}
-
-/** "alice" for alice@example.com, or "alice@example" when another login shares the name; any other label as is. */
-function shortName(label: string, labels: readonly string[]): string {
-  const name = localPart(label);
-  if (name === label || labels.filter((other) => other !== label && localPart(other) === name).length === 0) return name;
-  return `${name}@${label.slice(name.length + 1).split(".")[0]}`;
-}
-
 /** The limits binding a session on `model`: account-wide windows plus its own model family's pool. */
 function bindingWindows(account: Account, model: string | null): Window[] {
   return account.windows.filter((window) => window.modelFamily === null || (model?.includes(window.modelFamily) ?? false));
@@ -127,51 +116,31 @@ function fullestWeekly(account: Account): Window | undefined {
 }
 
 /** A composer pill's text: see `pillSchema`. */
-function pillSummary(account: Account, model: string | null, labels: readonly string[], now: number): Summary {
+function pillSummary(account: Account, symbol: string, model: string | null, now: number): Summary {
   const { tone, accent } = summarize(account, model, now);
-  const who = shortName(account.label, labels);
-  if (account.problem !== null) return { text: `${who} · no usage data`, tone, accent };
+  if (account.problem !== null) return { text: `${symbol} no usage data`, tone, accent };
   const fullest = fullestWeekly(account);
   const [balance] = account.balances;
-  let head = who;
-  if (fullest) head = `${who} ${timedState(fullest, now)}`;
-  else if (balance) head = `${who} · ${balanceText(balance)}`;
+  let head = symbol;
+  if (fullest) head = `${symbol} ${timedState(fullest, now)}`;
+  else if (balance) head = `${symbol} ${balanceText(balance)}`;
   const stopping = blockingWindows(account, model).map((window) => timedLimit(window, now));
   return { text: [head, ...stopping].join(" · "), tone, accent };
 }
 
-/** The vendor when it has one account here, else the login's short name: "Codex", "alice". */
-function accountName(account: Account, accounts: readonly Account[], labels: readonly string[]): string {
-  const sameVendor = accounts.filter((other) => other.vendor === account.vendor).length;
-  return sameVendor === 1 ? account.vendor : shortName(account.label, labels);
-}
-
 /**
- * The sidebar row: a short sentence, readable without the screen behind it, of the most pressing of
- * quota about to reset unused, "Codex: 75% expires in 17h"; a full reset worth redeeming, "redeem a
- * reset: alice"; a banked full reset expiring; how many accounts are full; reads that failed;
- * else how many accounts there are. `accounts` are in use order, so the first match is the one to act on.
+ * The sidebar row's one alarm: the first account, in use order, whose weekly quota resets soon
+ * with much unused, and how much and when: "70% unused · 2h". Everything else waits on the screen.
  */
-function overview(accounts: readonly Account[], views: readonly AccountView[], failed: boolean, now: number): Summary {
-  const labels = accounts.map((account) => account.label);
-  const name = (account: Account) => accountName(account, accounts, labels);
-  const wasting = accounts.find((account) => accountOutlook(account, now) === "unused");
-  const window = wasting && weeklyWindows(wasting).find((candidate) => outlookOf(candidate, now) === "unused");
-  if (wasting && window && window.resetsAt !== null) {
-    const text = `${name(wasting)}: ${percent(100 - window.usedPct)} expires in ${countdown(window.resetsAt - now, { largest: true })}`;
-    return { text, tone: "ok", accent: true };
+function overview(accounts: readonly Account[], now: number): UsageView["overview"] {
+  for (const account of accounts) {
+    const window = weeklyWindows(account).find((candidate) => outlookOf(candidate, now) === "unused");
+    if (window !== undefined && window.resetsAt !== null) {
+      const left = countdown(window.resetsAt - now, { largest: true });
+      return { accountId: account.id, text: `${percent(100 - window.usedPct)} unused · ${left}` };
+    }
   }
-  const freeable = accounts.find((account) => redeemable(account, now) !== null);
-  if (freeable) return { text: `redeem a reset: ${name(freeable)}`, tone: "ok", accent: true };
-  if (views.some((view) => view.resets.some((group) => group.scope === "full" && group.tone === "warning"))) {
-    return { text: "a full reset expires within a day", tone: "warning", accent: false };
-  }
-  const full = accounts.filter((account) => accountOutlook(account, now) === "reached").length;
-  if (full > 0) return { text: `${full} of ${accounts.length} accounts full`, tone: "danger", accent: false };
-  const unread = views.filter((view) => view.problem !== null).length;
-  if (unread > 0) return { text: `${plural(unread, "account")} without data`, tone: "warning", accent: false };
-  if (failed) return { text: "a usage read failed", tone: "warning", accent: false };
-  return { text: `${plural(views.length, "account")}, all fine`, tone: "ok", accent: false };
+  return null;
 }
 
 /** The same vendor's login, wherever it was read. */
@@ -215,6 +184,7 @@ export function buildUsageView(input: UsageInput): UsageView {
       windows: account.windows.map((window) => ({ ...window, runsOutAt: runsOutAt(window, account.fetchedAt, now) })),
     }))
     .toSorted(byUseOrder(now));
+  const avatarOf = avatars(accounts.map(({ id }) => id));
   const views = accounts.map((account): AccountView => {
     const { id, provider, vendor, label, organization, plan, profiles, fetchedAt, problem } = account;
     const weekly = weeklyWindows(account);
@@ -224,6 +194,8 @@ export function buildUsageView(input: UsageInput): UsageView {
     return {
       id,
       provider,
+      vendor,
+      avatar: avatarOf.get(id) ?? { symbol: "●", color: "#3b82f6" },
       label,
       organization,
       plan,
@@ -256,7 +228,6 @@ export function buildUsageView(input: UsageInput): UsageView {
   });
   const bound = bindAgents(input, read.logins);
   const pills: UsageView["pills"] = {};
-  const labels = accounts.map((account) => account.label);
   for (const ref of input.agents) {
     // Paseo's own providers read one sign-in each; only a sole one is surely the agent's.
     const signIns = accounts.filter((account) => account.profiles.length === 0 && account.provider === ref.provider);
@@ -269,7 +240,8 @@ export function buildUsageView(input: UsageInput): UsageView {
           other.provider === account.provider && other.id !== account.id && other.profiles.length > 0 && hasRoom(other, ref.model, now),
       )
       .map((other) => ({ accountId: other.id, ...summarize(other, ref.model, now) }));
-    pills[ref.agentId] = { accountId: account.id, ...pillSummary(account, ref.model, labels, now), others };
+    const symbol = avatarOf.get(account.id)?.symbol ?? "●";
+    pills[ref.agentId] = { accountId: account.id, ...pillSummary(account, symbol, ref.model, now), others };
   }
   const fetched = accounts.flatMap((account) => (account.fetchedAt === null ? [] : [account.fetchedAt]));
   const errors = [
@@ -278,7 +250,7 @@ export function buildUsageView(input: UsageInput): UsageView {
   ];
   return {
     accounts: views,
-    overview: overview(accounts, views, errors.length > 0, now),
+    overview: overview(accounts, now),
     pills,
     fetchedAt: fetched.length > 0 ? Math.min(...fetched) : null,
     errors,
@@ -356,7 +328,7 @@ function isoDate(at: number): string {
 /**
  * Paseo's Usage screen words resets and pace itself, inline with each limit. Only weekly limits are
  * summary windows, so its sidebar strip pins them alone. Details lead with what to do: use the account
- * before quota resets unused, or redeem a full reset; their times are on the limit's own line.
+ * before quota resets unused, or unlock it with a banked reset; their times are on the limit's own line.
  */
 export function toUsageReport(account: AccountView): UsageReport {
   if (account.problem !== null) {
@@ -369,7 +341,8 @@ export function toUsageReport(account: AccountView): UsageReport {
     details.push({ id: `use-first-${window.id}`, label: "↓ Use first", value, tone: "warning" });
   }
   if (account.redeem) {
-    details.push({ id: "redeem", label: "⟲ Redeem a full reset", value: "weekly limit reached for over a day", tone: "warning" });
+    const value = "the weekly limit is full for over a day; a banked full reset clears it now";
+    details.push({ id: "redeem", label: "⟲ Unlock with a banked reset", value, tone: "warning" });
   }
   if (account.resets.length > 0) {
     details.push({ id: "banked-resets", label: "Banked resets", value: resetsText(account.resets, isoDate) });
