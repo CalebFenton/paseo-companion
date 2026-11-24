@@ -4,16 +4,17 @@ A Paseo plugin: Usage, Pull requests, and System screens. [README.md](README.md)
 
 ## Layout
 
-| Path                | Runs in                        | Owns                                                                                      |
-| ------------------- | ------------------------------ | ----------------------------------------------------------------------------------------- |
-| `index.server.ts`   | the plugin process, under Node | Registers RPCs, feeds, hooks, and usage sources.                                          |
-| `server/<feature>/` | the plugin process             | Reads (omp, `gh`, Paseo, `/proc`), caches them, and builds each view.                     |
-| `index.client.tsx`  | the Paseo app (React Native)   | Registers screens, sidebar rows, badges, and pills.                                       |
-| `client/`           | the Paseo app                  | Stores that subscribe to feeds, and components that render views.                         |
-| `shared/`           | both                           | The RPC and feed contracts as zod schemas, the view types, and pure formatting.           |
-| `fixtures/`         | tests                          | `*.input.json` are captured reads; `*.view.json` are the views the tests build from them. |
-| `scripts/`          | Node, by hand                  | `project-icons.ts` (`npm run icons`) and the daemon client it shares with `e2e/`.         |
-| `e2e/`              | Node, against the live daemon  | Reloads the plugin and calls each RPC and feed through the daemon.                        |
+| Path                | Runs in                        | Owns                                                                                                                             |
+| ------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| `index.server.ts`   | the plugin process, under Node | Registers RPCs, feeds, hooks, and usage sources.                                                                                 |
+| `server/<feature>/` | the plugin process             | Reads (omp, `gh`, Paseo, `/proc`), caches them, and builds each view.                                                            |
+| `index.client.tsx`  | the Paseo app (React Native)   | Registers screens, sidebar rows, badges, and pills.                                                                              |
+| `client/`           | the Paseo app                  | Stores that subscribe to feeds, and components that render views.                                                                |
+| `shared/`           | both                           | The RPC and feed contracts as zod schemas, the view types, pure formatting, and the mark's geometry (`mark.ts`).                 |
+| `fixtures/`         | tests                          | `*.input.json` are captured reads; `*.view.json` are the views the tests build from them.                                        |
+| `scripts/`          | Node, by hand                  | `project-icons.ts` (`npm run icons`), `brand.ts` (`npm run brand`), and the daemon client `project-icons.ts` shares with `e2e/`. |
+| `brand/`            | the README                     | `hero.svg`, which `scripts/brand.ts` draws, and the wordmark's font.                                                             |
+| `e2e/`              | Node, against the live daemon  | Reloads the plugin and calls each RPC and feed through the daemon.                                                               |
 
 The server decides and words everything; the client renders the view it receives. When a screen needs a new fact, add it to the view in `server/<feature>/view.ts` and its type in `shared/`, not a computation in `client/`.
 

@@ -1,5 +1,7 @@
 # paseo-companion
 
+![Paseo companion: usage, pull requests, system](brand/hero.svg)
+
 A [Paseo](https://paseo.sh) plugin with three screens, each opened from a row in the sidebar footer:
 
 - **Usage**: every account's weekly limit, from omp's profiles and Paseo's own usage sources, ranked in the order to use them so no quota resets unused. It also adds pills to each session's composer and signals to the cards on Paseo's Usage screen.

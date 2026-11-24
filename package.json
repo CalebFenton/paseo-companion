@@ -23,14 +23,17 @@
     "dupes": "jscpd .",
     "test": "vitest run",
     "e2e": "vitest run --config vitest.e2e.config.mts --reporter=verbose",
-    "icons": "node scripts/project-icons.ts"
+    "icons": "node scripts/project-icons.ts",
+    "brand": "node scripts/brand.ts"
   },
   "devDependencies": {
     "@getpaseo/plugin": "^0.17.2",
     "@j178/prek": "0.5.11",
     "@resvg/resvg-js": "^2.6.2",
+    "@types/fontkit": "2.0.9",
     "@types/node": "^22.20.5",
     "@types/react": "~19.2.0",
+    "fontkit": "2.0.4",
     "jscpd": "5.4.3",
     "knip": "6.48.0",
     "lucide-static": "^1.77.0",

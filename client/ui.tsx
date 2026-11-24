@@ -5,6 +5,7 @@ import { type ReactNode, useEffect, useState } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { ago } from "../shared/format";
 import type { Tone } from "../shared/tone";
+import { Mark } from "./mark";
 
 export type Themed = Pick<PluginHostProps, "theme">;
 
@@ -182,7 +183,14 @@ export function ReadStatus({
           onPress={onRefresh}
           style={{ flexDirection: "row", alignItems: "center", gap: 4 }}
         >
-          <Icon name="RotateCw" size={14} color={theme.colors.foregroundMuted} />
+          {/* One 16 px slot for both, so the screen does not shift when a refresh starts or ends. */}
+          <View style={{ width: 16, height: 16, alignItems: "center", justifyContent: "center" }}>
+            {refreshing ? (
+              <Mark theme={theme} size={16} turning />
+            ) : (
+              <Icon name="RotateCw" size={14} color={theme.colors.foregroundMuted} />
+            )}
+          </View>
           <Text style={s.muted}>{refreshing ? "Refreshing…" : updated}</Text>
         </Pressable>
       </View>
