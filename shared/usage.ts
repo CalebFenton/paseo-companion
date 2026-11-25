@@ -1,7 +1,7 @@
 import { defineRpc, defineSettings, defineSubscription } from "@getpaseo/plugin";
 import { z } from "zod";
-import { joinParts, percent } from "./format";
-import { toneSchema } from "./tone";
+import { joinParts, percent } from "./format.ts";
+import { toneSchema } from "./tone.ts";
 
 export const balanceUnitSchema = z.enum(["usd", "credits", "requests", "tokens"]);
 export type BalanceUnit = z.infer<typeof balanceUnitSchema>;

@@ -4,21 +4,22 @@ A Paseo plugin: Usage, Pull requests, and System screens. [README.md](README.md)
 
 ## Layout
 
-| Path                | Runs in                        | Owns                                                                                                                             |
-| ------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| `index.server.ts`   | the plugin process, under Node | Registers RPCs, feeds, hooks, and usage sources.                                                                                 |
-| `server/<feature>/` | the plugin process             | Reads (omp, `gh`, Paseo, `/proc`), caches them, and builds each view.                                                            |
-| `index.client.tsx`  | the Paseo app (React Native)   | Registers screens, sidebar rows, badges, and pills.                                                                              |
-| `client/`           | the Paseo app                  | Stores that subscribe to feeds, and components that render views.                                                                |
-| `shared/`           | both                           | The RPC and feed contracts as zod schemas, the view types, pure formatting, and the mark's geometry (`mark.ts`).                 |
-| `fixtures/`         | tests                          | `*.input.json` are captured reads; `*.view.json` are the views the tests build from them.                                        |
-| `scripts/`          | Node, by hand                  | `project-icons.ts` (`npm run icons`), `brand.ts` (`npm run brand`), and the daemon client `project-icons.ts` shares with `e2e/`. |
-| `brand/`            | the README                     | `hero.svg`, which `scripts/brand.ts` draws, and the wordmark's font.                                                             |
-| `e2e/`              | Node, against the live daemon  | Reloads the plugin and calls each RPC and feed through the daemon.                                                               |
+| Path                | Runs in                        | Owns                                                                                                                                                        |
+| ------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index.server.ts`   | the plugin process, under Node | Registers RPCs, feeds, hooks, and usage sources.                                                                                                            |
+| `server/<feature>/` | the plugin process             | Reads (omp, `gh`, Paseo, `/proc`), caches them, and builds each view.                                                                                       |
+| `index.client.tsx`  | the Paseo app (React Native)   | Registers screens, sidebar rows, badges, and pills.                                                                                                         |
+| `client/`           | the Paseo app                  | Stores that subscribe to feeds, and components that render views.                                                                                           |
+| `shared/`           | both                           | The RPC and feed contracts as zod schemas, the view types, pure formatting, and the mark's geometry (`mark.ts`).                                            |
+| `fixtures/`         | tests                          | `*.input.json` are captured reads; `*.view.json` are the views the tests build from them.                                                                   |
+| `scripts/`          | Node, by hand                  | `project-icons.ts` (`npm run icons`), `brand.ts` (`npm run brand`), `screenshots.ts` (`npm run screenshots`), and the daemon client they share with `e2e/`. |
+| `brand/`            | the README                     | `hero.svg`, which `scripts/brand.ts` draws, and the wordmark's font.                                                                                        |
+| `screenshots/`      | the README                     | Pictures of each screen, which `scripts/screenshots.ts` draws from the fixtures.                                                                            |
+| `e2e/`              | Node, against the live daemon  | Reloads the plugin and calls each RPC and feed through the daemon.                                                                                          |
 
 The server decides and words everything; the client renders the view it receives. When a screen needs a new fact, add it to the view in `server/<feature>/view.ts` and its type in `shared/`, not a computation in `client/`.
 
-TypeScript project references enforce the boundaries: `tsconfig.client.json` covers `client/` and `shared/` without Node types, and `tsconfig.server.json` covers the rest. A client import of `server/` fails `tsc -b`.
+TypeScript project references enforce the boundaries: `tsconfig.client.json` covers `client/` and `shared/` without Node types, and `tsconfig.server.json` covers the rest. A client import of `server/` fails `tsc -b`. Files in `shared/` import each other with the `.ts` extension, so the scripts can load them under plain Node.
 
 The plugin SDK's contract is its type declarations, under `node_modules/@getpaseo/plugin/dist/`.
 
@@ -38,6 +39,8 @@ A view test compares its view with `fixtures/<feature>.view.json`. When a change
 This repository is public. A fixture captured from a live host carries its owner's names, hostnames, addresses, and paths; replace them with neutral ones (`acme`, `example.org`, `/home/me`, `192.0.2.0/24`) before committing. The private-text hook enforces this with patterns from `.private-patterns`, an untracked file each owner keeps; `scripts/check-private.ts` documents it.
 
 `npm run e2e` checks the plugin end to end. It is not part of the hook, because it reloads the plugin in the running daemon and needs `gh` and `omp` signed in.
+
+`npm run screenshots` draws `screenshots/` again; run it when a change alters what a screen shows, and look at every picture. It opens Paseo's web build against the running daemon and answers the plugin's requests from the fixtures, so the pictures show only made-up names. It needs Playwright's browser once: `npx playwright-core install chromium-headless-shell`.
 
 ## Rules
 

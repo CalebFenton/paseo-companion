@@ -15,12 +15,17 @@ export function hasMethods<Name extends string>(value: unknown, names: readonly 
   return typeof value === "object" && value !== null && names.every((name) => isMethod(Reflect.get(value, name)));
 }
 
+/** The root of the installed Paseo CLI package, which also carries the daemon and its web build. */
+export function installedCli(): string {
+  return join(dirname(realpathSync(execFileSync("which", ["paseo"], { encoding: "utf8" }).trim())), "..");
+}
+
 /**
  * A client of the local Paseo daemon, from the installed Paseo CLI, found at run time: it matches the
  * daemon's version. The CLI ships no types this checkout can import, so `methods` are the ones checked.
  */
 export async function connectToDaemon<Name extends string>(methods: readonly Name[]): Promise<Methods<Name>> {
-  const cli = join(dirname(realpathSync(execFileSync("which", ["paseo"], { encoding: "utf8" }).trim())), "..", "dist", "utils");
+  const cli = join(installedCli(), "dist", "utils");
   const clientModule: unknown = await import(join(cli, "client.js"));
   const targetModule: unknown = await import(join(cli, "daemon-target.js"));
   if (!hasMethods(clientModule, ["connectToDaemon"]) || !hasMethods(targetModule, ["selectDaemonTarget"])) {

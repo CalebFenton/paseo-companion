@@ -24,7 +24,8 @@
     "test": "vitest run",
     "e2e": "vitest run --config vitest.e2e.config.mts --reporter=verbose",
     "icons": "node scripts/project-icons.ts",
-    "brand": "node scripts/brand.ts"
+    "brand": "node scripts/brand.ts",
+    "screenshots": "node scripts/screenshots.ts"
   },
   "devDependencies": {
     "@getpaseo/plugin": "^0.17.2",
@@ -40,6 +41,7 @@
     "oxfmt": "0.80.0",
     "oxlint": "1.95.0",
     "oxlint-tsgolint": "7.0.2008",
+    "playwright-core": "1.65.1",
     "react": "19.2.3",
     "react-native": "0.86.3",
     "rumdl": "0.3.5",

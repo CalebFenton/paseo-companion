@@ -1,6 +1,6 @@
 import { defineSubscription } from "@getpaseo/plugin";
 import { z } from "zod";
-import { toneSchema } from "./tone";
+import { toneSchema } from "./tone.ts";
 
 /** How often the daemon side samples, and an open System screen polls it. */
 export const SAMPLE_MS = 2_000;

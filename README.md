@@ -8,6 +8,34 @@ A [Paseo](https://paseo.sh) plugin with three screens, each opened from a row in
 - **Pull requests**: the pull requests that need your reply, review, re-review, or merge. Each workspace's sidebar row shows the same status for its pull request.
 - **System**: CPU, memory, load, pressure, disk, network, and filesystems for each host.
 
+## Screens
+
+The pictures show made-up accounts, pull requests, and hosts: the views the tests build from [`fixtures/`](fixtures). `npm run screenshots` draws them again.
+
+### Sidebar rows
+
+When a login's weekly quota is about to reset unused, the Usage row names it: its vendor, its glyph, how much is left, and when it resets.
+
+![The plugin's sidebar rows, with Codex's quota about to reset unused](screenshots/sidebar-alert.png)
+
+Otherwise the row shows one bar per login, filled to its weekly use, above that login's glyph.
+
+![The plugin's sidebar rows, with one bar per login](screenshots/sidebar-calm.png)
+
+### Usage
+
+Each login with its vendor's logo and its own glyph, ranked in the order to use them. The blue row is the one to use first.
+
+![The Usage screen](screenshots/usage.png)
+
+### Pull requests
+
+![The Pull requests screen](screenshots/pull-requests.png)
+
+### System
+
+![The System screen](screenshots/system.png)
+
 ## Install
 
 The plugin runs from this checkout. It needs Paseo 0.17 or later, plus `gh` and `omp` signed in.
